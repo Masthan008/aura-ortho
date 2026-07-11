@@ -3,9 +3,9 @@ const doctorData = [
   { id: 'jenkins', name: 'Dr. Sarah Jenkins', specialty: 'sports-medicine', image: '/src/assets/doctors.png', bio: 'Sports Medicine & Joint Arthroscopy Specialist. 15+ years experience.' },
   { id: 'pendelton', name: 'Dr. Arthur Pendelton', specialty: 'spine-surgery', image: '/src/assets/doctors.png', bio: 'Board-Certified Spine Surgeon, specializing in minimally invasive spine care.' },
   { id: 'lin', name: 'Dr. Maya Lin', specialty: 'hand-wrist', image: '/src/assets/doctors.png', bio: 'Microvascular hand surgeon specializing in wrist reconstruction and trauma.' },
-  { id: 'chen', name: 'Dr. Robert Chen', specialty: 'joint-replacement', image: '/src/assets/doctors.png', bio: 'Expert hip and knee reconstructive surgeon. 20+ years clinical experience.' },
+  { id: 'raju', name: 'Dr. Raju Bollabathini', specialty: 'joint-replacement', image: '/src/assets/doctors.png', bio: 'Chief Orthopedic Surgeon. Specialist in hip & knee replacements and Ilizarov reconstructions.' },
   { id: 'rostova', name: 'Dr. Elena Rostova', specialty: 'pediatric', image: '/src/assets/doctors.png', bio: 'Pediatric orthopedist specializing in congenital joint correction and spine curvature.' },
-  { id: 'trauma-specialist', name: 'Dr. Robert Chen', specialty: 'trauma', image: '/src/assets/doctors.png', bio: 'Expert orthopedic traumatologist specializing in bone healing.' },
+  { id: 'raju-trauma', name: 'Dr. Raju Bollabathini', specialty: 'trauma', image: '/src/assets/doctors.png', bio: 'Chief Orthopedic Surgeon. Specialist in complex fracture fixations and accident care.' },
   { id: 'vance', name: 'Dr. Marcus Vance', specialty: 'foot-ankle', image: '/src/assets/doctors.png', bio: 'Fellowship-trained Foot & Ankle surgeon specializing in reconstructive surgery and sports injuries.' },
   { id: 'kelly', name: 'Dr. Thomas Kelly', specialty: 'shoulder-elbow', image: '/src/assets/doctors.png', bio: 'Shoulder & Elbow specialist specializing in complex rotator cuff repair and shoulder arthroplasty.' }
 ];

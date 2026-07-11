@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aura Orthopedics - Premium Musculoskeletal Care</title>
   <meta name="description" content="Aura Orthopedics offers state-of-the-art joint replacement, sports medicine, spine surgery, and comprehensive musculoskeletal rehabilitation in a luxury medical setting.">
-  <script type="module" crossorigin src="/assets/main-B5j4Kkt0.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/main-DcuHNapv.js">
-  <link rel="stylesheet" crossorigin href="/assets/main-DWtcfr_1.css">
+  <script type="module" crossorigin src="/assets/main-q90auZjG.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/main-zOYuAA6_.js">
+  <link rel="stylesheet" crossorigin href="/assets/main-ocHCoPI3.css">
 </head>
 <body>
   <!-- Accessibility Skip Link -->
@@ -38,19 +38,63 @@
   <header class="navbar layer-mid">
     <a href="index.html" class="nav-brand">
       <i data-lucide="activity"></i>
-      <span>AURA ORTHO</span>
+      <span>PALLAWI HOSPITAL</span>
     </a>
     <nav>
       <ul class="nav-menu">
         <li><a href="index.html" class="nav-link active">Home</a></li>
-        <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="doctors.html" class="nav-link">Doctors</a></li>
-        <li><a href="conditions.html" class="nav-link">Conditions</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        
+        <!-- Dropdown: About & Careers -->
+        <li class="dropdown">
+          <a href="#" class="nav-link">About Us <i data-lucide="chevron-down" style="width:12px; height:12px; display:inline-block; vertical-align:middle;"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">About Hospital</a></li>
+            <li><a href="doctors.html">Our Doctors</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown: Services -->
+        <li class="dropdown">
+          <a href="#" class="nav-link">Services <i data-lucide="chevron-down" style="width:12px; height:12px; display:inline-block; vertical-align:middle;"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html">Orthopedic Services</a></li>
+            <li><a href="children.html">Children's Services</a></li>
+            <li><a href="treatments.html">Treatments</a></li>
+            <li><a href="conditions.html">Conditions We Treat</a></li>
+            <li><a href="packages.html">Health Packages</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown: Patients -->
+        <li class="dropdown">
+          <a href="#" class="nav-link">Patients <i data-lucide="chevron-down" style="width:12px; height:12px; display:inline-block; vertical-align:middle;"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="testimonials.html">Patient Testimonials</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="insurance.html">Insurance & TPAs</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown: Media -->
+        <li class="dropdown">
+          <a href="#" class="nav-link">Media <i data-lucide="chevron-down" style="width:12px; height:12px; display:inline-block; vertical-align:middle;"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="blog.html">Health Tips Blog</a></li>
+            <li><a href="news.html">News & Events</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
       </ul>
     </nav>
-    <a href="contact.html" class="nav-cta-btn">Book Now</a>
+    <div style="display:flex; gap:12px; align-items:center;">
+      <a href="contact.html?emergency=true" class="nav-cta-btn" style="background:linear-gradient(135deg, #DC2626 0%, #EF4444 100%); box-shadow:0 4px 15px rgba(220,38,38,0.25);">Emergency</a>
+      <a href="contact.html" class="nav-cta-btn">Book Appointment</a>
+    </div>
     <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
       <i data-lucide="menu"></i>
     </button>
@@ -58,17 +102,22 @@
 
   <!-- Mobile Menu Overlay -->
   <div class="mobile-menu-overlay" id="mobile-menu-overlay">
-    <div class="mobile-menu-container">
+    <div class="mobile-menu-container" style="max-height:85vh; overflow-y:auto;">
       <button class="doctor-modal-close" id="mobile-menu-close" aria-label="Close Menu">
         <i data-lucide="x"></i>
       </button>
       <ul class="mobile-menu-list">
         <li><a href="index.html" class="mobile-menu-link">Home</a></li>
-        <li><a href="services.html" class="mobile-menu-link">Services</a></li>
-        <li><a href="doctors.html" class="mobile-menu-link">Doctors</a></li>
-        <li><a href="conditions.html" class="mobile-menu-link">Conditions</a></li>
-        <li><a href="about.html" class="mobile-menu-link">About</a></li>
-        <li><a href="blog.html" class="mobile-menu-link">Blog</a></li>
+        <li><a href="about.html" class="mobile-menu-link">About Hospital</a></li>
+        <li><a href="doctors.html" class="mobile-menu-link">Our Doctors</a></li>
+        <li><a href="services.html" class="mobile-menu-link">Orthopedic Services</a></li>
+        <li><a href="children.html" class="mobile-menu-link">Children's Services</a></li>
+        <li><a href="treatments.html" class="mobile-menu-link">Treatments</a></li>
+        <li><a href="conditions.html" class="mobile-menu-link">Conditions We Treat</a></li>
+        <li><a href="packages.html" class="mobile-menu-link">Health Packages</a></li>
+        <li><a href="testimonials.html" class="mobile-menu-link">Testimonials</a></li>
+        <li><a href="stories.html" class="mobile-menu-link">Success Stories</a></li>
+        <li><a href="blog.html" class="mobile-menu-link">Health Tips Blog</a></li>
         <li><a href="contact.html" class="mobile-menu-link" style="color:var(--teal-mid);">Book Appointment</a></li>
       </ul>
     </div>
@@ -297,13 +346,13 @@
             <div class="doctor-teaser-spec">Spine Surgery</div>
             <a href="doctors.html" class="liquid-btn" style="padding:10px 20px; font-size:0.8rem;">View Profile</a>
           </div>
-          <!-- Dr. Robert Chen -->
+          <!-- Dr. Raju Bollabathini -->
           <div class="glass-card doctor-teaser-card layer-bg">
             <div class="doctor-avatar-container">
-              <img src="/assets/doctors-QFp0jcZz.png" alt="Dr. Robert Chen" class="doctor-avatar">
+              <img src="/assets/doctors-QFp0jcZz.png" alt="Dr. Raju Bollabathini" class="doctor-avatar">
             </div>
-            <h3 class="doctor-teaser-name">Dr. Robert Chen</h3>
-            <div class="doctor-teaser-spec">Joint Replacement</div>
+            <h3 class="doctor-teaser-name">Dr. Raju Bollabathini</h3>
+            <div class="doctor-teaser-spec">Chief Orthopedic Surgeon</div>
             <a href="doctors.html" class="liquid-btn" style="padding:10px 20px; font-size:0.8rem;">View Profile</a>
           </div>
           <!-- Dr. Maya Lin -->
@@ -338,47 +387,47 @@
         </div>
 
         <div class="testimonials-slider scroll-reveal">
-          <!-- Slide 1 -->
+          <!-- Slide 1: Hip Fracture -->
           <div class="testimonial-slide active">
             <div class="glass-card testimonial-card layer-fg">
               <div class="testimonial-stars">
                 <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
               </div>
-              <p class="testimonial-quote">"After my robotic-assisted knee replacement with Dr. Chen, I walked pain-free within three weeks. The care coordination at Aura felt like a luxury retreat rather than standard medical care."</p>
+              <p class="testimonial-quote">"My grandmother had a fall and fractured her hip. Dr. Raju sir explained the surgery very well and successfully completed the hip surgery at Pallawi Hospital with low cost. Now she is walking on her own. We are very thankful to Dr. Raju sir, the management, and the staff!"</p>
               <div class="testimonial-author">
                 <div style="text-align:center;">
                   <div class="testimonial-author-name">David L. Miller</div>
-                  <div class="testimonial-author-condition">Total Knee Replacement Patient</div>
+                  <div class="testimonial-author-condition">Hip Fracture Patient (Grandson Review)</div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Slide 2 -->
+          <!-- Slide 2: Rotator Cuff -->
           <div class="testimonial-slide">
             <div class="glass-card testimonial-card layer-fg">
               <div class="testimonial-stars">
                 <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
               </div>
-              <p class="testimonial-quote">"As an avid golfer, spine pain threatened to end my hobby. Dr. Pendelton performed minimally invasive decompression, and I am back on the fairway without stiffness or soreness."</p>
+              <p class="testimonial-quote">"My father's rotator cuff was damaged. Other local doctors couldn't understand it, but Dr. Raju at Pallawi Hospital said 'don't worry, we can fix it'. Now 3 months after surgery he is driving his car, fine and pain-free, with very reasonable cost."</p>
               <div class="testimonial-author">
                 <div style="text-align:center;">
                   <div class="testimonial-author-name">Clara Vance</div>
-                  <div class="testimonial-author-condition">Herniated Disc Patient</div>
+                  <div class="testimonial-author-condition">Rotator Cuff Repair Patient</div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Slide 3 -->
+          <!-- Slide 3: Bone Loss Lengthening -->
           <div class="testimonial-slide">
             <div class="glass-card testimonial-card layer-fg">
               <div class="testimonial-stars">
                 <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
               </div>
-              <p class="testimonial-quote">"My daughter's ACL tear was devastated news for her collegiate soccer plans. Dr. Jenkins performed a graft repair, and her strength scores now exceed her pre-injury baseline."</p>
+              <p class="testimonial-quote">"Other hospitals advised leg amputation because of 15cm bone loss. Dr. Raju sir explained the Ilizarov fixation risks and successfully did the surgery. 15cm bone lengthening done! My mother recovered fully from a hopeless situation."</p>
               <div class="testimonial-author">
                 <div style="text-align:center;">
-                  <div class="testimonial-author-name">Marcus G. (Father of Chloe)</div>
-                  <div class="testimonial-author-condition">ACL Reconstruction Patient</div>
+                  <div class="testimonial-author-name">Marcus G. (Son of Patient)</div>
+                  <div class="testimonial-author-condition">Ilizarov 15cm Bone Lengthening Patient</div>
                 </div>
               </div>
             </div>
@@ -434,9 +483,9 @@
       <div>
         <a href="index.html" class="footer-logo">
           <i data-lucide="activity"></i>
-          <span>AURA ORTHOPEDICS</span>
+          <span>PALLAWI HOSPITAL</span>
         </a>
-        <p class="footer-desc">Premium skeletal health and movement restoration. Restoring vitality, strength, and life coordinates to active individuals.</p>
+        <p class="footer-desc">Exceptional orthopedic care, children's services, and critical care units in Mancherial, Telangana. Blending clinical brilliance with genuine compassion.</p>
         <div class="social-links">
           <a href="#" class="social-btn" aria-label="Facebook"><i data-lucide="star"></i></a>
           <a href="#" class="social-btn" aria-label="Twitter"><i data-lucide="activity"></i></a>
@@ -448,26 +497,29 @@
         <h4 class="footer-title">Navigation</h4>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="doctors.html">Lead Physicians</a></li>
-          <li><a href="conditions.html">Patient Guides</a></li>
-          <li><a href="about.html">Our Clinic</a></li>
-          <li><a href="contact.html">Book Appointment</a></li>
-          <li><a href="blog.html">Health Insights</a></li>
+          <li><a href="about.html">About Hospital</a></li>
+          <li><a href="doctors.html">Our Doctors</a></li>
+          <li><a href="services.html">Orthopedic Services</a></li>
+          <li><a href="children.html">Children's Services</a></li>
+          <li><a href="treatments.html">Treatments Directory</a></li>
+          <li><a href="conditions.html">Conditions We Treat</a></li>
+          <li><a href="packages.html">Health Packages</a></li>
+          <li><a href="blog.html">Health Tips Blog</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="footer-title">Services</h4>
+        <h4 class="footer-title">Patient Portal</h4>
         <ul class="footer-links">
-          <li><a href="services.html#sports">Sports Medicine</a></li>
-          <li><a href="services.html#joint">Joint Replacement</a></li>
-          <li><a href="services.html#spine">Spine Care</a></li>
-          <li><a href="services.html#pediatric">Pediatric Ortho</a></li>
-          <li><a href="services.html#hand">Hand & Wrist</a></li>
-          <li><a href="services.html#trauma">Trauma Surgery</a></li>
-          <li><a href="services.html#foot-ankle">Foot & Ankle</a></li>
-          <li><a href="services.html#shoulder-elbow">Shoulder & Elbow</a></li>
+          <li><a href="testimonials.html">Patient Testimonials</a></li>
+          <li><a href="stories.html">Success Stories</a></li>
+          <li><a href="gallery.html">Hospital Gallery</a></li>
+          <li><a href="videos.html">YouTube Videos</a></li>
+          <li><a href="news.html">News & Events</a></li>
+          <li><a href="insurance.html">Insurance & TPAs</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="faqs.html">FAQs Page</a></li>
+          <li><a href="contact.html">Contact & Emergency</a></li>
         </ul>
       </div>
 
@@ -476,22 +528,22 @@
         <div class="footer-contact-info">
           <div class="footer-contact-item">
             <i data-lucide="map-pin"></i>
-            <p>Aura Surgical Plaza, Suite 400<br>9020 Beverly Hills Blvd, CA 90210</p>
+            <p>Pallawi Hospital, Near Bellampally Chowrasta<br>Mancherial, Telangana 504208</p>
           </div>
           <div class="footer-contact-item">
             <i data-lucide="phone"></i>
-            <p>+1 (800) 555-AURA<br>Mon - Fri: 8:00 AM - 6:00 PM</p>
+            <p>+91 94406 38622<br>+91 8736 252255<br>24/7 Emergency Line</p>
           </div>
           <div class="footer-contact-item">
             <i data-lucide="mail"></i>
-            <p>concierge@auraclinic.com</p>
+            <p>contact@pallawihospital.com</p>
           </div>
         </div>
       </div>
     </div>
     
     <div class="container footer-bottom">
-      <p>&copy; 2026 Aura Orthopedic Clinic. All rights reserved. | <a href="#" style="color:var(--text-muted); text-decoration:none;">Privacy Policy</a> | <a href="#" style="color:var(--text-muted); text-decoration:none;">Terms of Service</a></p>
+      <p>&copy; 2026 Pallawi Hospital. All rights reserved. | <a href="#" style="color:var(--text-muted); text-decoration:none;">Privacy Policy</a> | <a href="#" style="color:var(--text-muted); text-decoration:none;">Terms of Service</a></p>
     </div>
   </footer>
 
