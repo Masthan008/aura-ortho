@@ -1,13 +1,8 @@
 // Data structures for Doctors & Specialties
 const doctorData = [
-  { id: 'jenkins', name: 'Dr. Sarah Jenkins', specialty: 'sports-medicine', image: '/src/assets/dr-sarah-jenkins.png', bio: 'Sports Medicine & Joint Arthroscopy Specialist. 15+ years experience.' },
-  { id: 'pendelton', name: 'Dr. Arthur Pendelton', specialty: 'spine-surgery', image: '/src/assets/dr-arthur-pendelton.png', bio: 'Board-Certified Spine Surgeon, specializing in minimally invasive spine care.' },
-  { id: 'lin', name: 'Dr. Maya Lin', specialty: 'hand-wrist', image: '/src/assets/dr-maya-lin.png', bio: 'Microvascular hand surgeon specializing in wrist reconstruction and trauma.' },
-  { id: 'raju', name: 'Dr. Raju Bollabathini', specialty: 'joint-replacement', image: '/src/assets/dr-raju-bollabathini.png', bio: 'Chief Orthopedic Surgeon. Specialist in hip & knee replacements and Ilizarov reconstructions.' },
-  { id: 'rostova', name: 'Dr. Elena Rostova', specialty: 'pediatric', image: '/src/assets/dr-elena-rostova.png', bio: 'Pediatric orthopedist specializing in congenital joint correction and spine curvature.' },
-  { id: 'raju-trauma', name: 'Dr. Raju Bollabathini', specialty: 'trauma', image: '/src/assets/dr-raju-bollabathini.png', bio: 'Chief Orthopedic Surgeon. Specialist in complex fracture fixations and accident care.' },
-  { id: 'vance', name: 'Dr. Marcus Vance', specialty: 'foot-ankle', image: '/src/assets/dr-marcus-vance.png', bio: 'Fellowship-trained Foot & Ankle surgeon specializing in reconstructive surgery and sports injuries.' },
-  { id: 'kelly', name: 'Dr. Thomas Kelly', specialty: 'shoulder-elbow', image: '/src/assets/dr-thomas-kelly.png', bio: 'Shoulder & Elbow specialist specializing in complex rotator cuff repair and shoulder arthroplasty.' }
+  { id: 'raju', name: 'Dr. Raju Bollabathini', specialty: 'joint-replacement', image: '/src/assets/dr-raju-bollabathini.png', bio: 'Chief Orthopedic Surgeon. Specialist in hip & knee replacements, trauma care, and pediatric consulting.' },
+  { id: 'pediatric-team', name: 'Pediatric & NICU ICU Team', specialty: 'pediatric', image: '/src/assets/dr-elena-rostova.png', bio: 'Critical Care Specialists. Providing 24/7 emergency support for newborn care, low birth weight, and NICU.' },
+  { id: 'physio-team', name: 'Physiotherapy & Rehab Team', specialty: 'physiotherapy', image: '/src/assets/dr-sarah-jenkins.png', bio: 'Rehab & Exercise Specialists. Guiding patients through post-operative recovery and electrotherapy.' }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -53,7 +48,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectedService = bookingState.service;
     
     // Filter doctors by selected service specialty
-    const filteredDoctors = doctorData.filter(doc => doc.specialty === selectedService);
+    const filteredDoctors = doctorData.filter(doc => {
+      if (selectedService === 'physiotherapy' || selectedService === 'rehabilitation') {
+        return doc.id === 'physio-team';
+      }
+      if (['general-pediatrics', 'neonatology', 'nicu', 'picu', 'vaccinations', 'child-development', 'ped-neurology', 'ped-pulmonology', 'ped-gastro', 'pediatric'].includes(selectedService)) {
+        return doc.id === 'pediatric-team' || doc.id === 'raju';
+      }
+      // Otherwise, Dr. Raju handles all orthopedic specialties
+      return doc.id === 'raju';
+    });
     
     // Fallback: If no specialist specifically matching (or sports), show sports/joint doctors
     const doctorsToShow = filteredDoctors.length > 0 ? filteredDoctors : doctorData.slice(0, 3);
