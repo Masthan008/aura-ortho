@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Orthopedics - Premium Musculoskeletal Care</title>
+  <meta name="description" content="Aura Orthopedics offers state-of-the-art joint replacement, sports medicine, spine surgery, and comprehensive musculoskeletal rehabilitation in a luxury medical setting.">
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- Custom Page Loader -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-spinner">
+      <div class="loader-inner">
+        <span class="loader-logo">AURA</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Morphing Gradients -->
+  <div class="bg-mesh-container">
+    <div class="bg-blob blob-teal"></div>
+    <div class="bg-blob blob-blue"></div>
+    <div class="bg-blob blob-green"></div>
+  </div>
+
+  <!-- Sticky Glass Navbar -->
+  <header class="navbar layer-mid">
+    <a href="index.html" class="nav-brand">
+      <i data-lucide="activity"></i>
+      <span>AURA ORTHO</span>
+    </a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+        <li><a href="conditions.html" class="nav-link">Conditions</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="nav-cta-btn">Book Now</a>
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+      <i data-lucide="menu"></i>
+    </button>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <div class="mobile-menu-container">
+      <button class="doctor-modal-close" id="mobile-menu-close" aria-label="Close Menu">
+        <i data-lucide="x"></i>
+      </button>
+      <ul class="mobile-menu-list">
+        <li><a href="index.html" class="mobile-menu-link">Home</a></li>
+        <li><a href="services.html" class="mobile-menu-link">Services</a></li>
+        <li><a href="doctors.html" class="mobile-menu-link">Doctors</a></li>
+        <li><a href="conditions.html" class="mobile-menu-link">Conditions</a></li>
+        <li><a href="about.html" class="mobile-menu-link">About</a></li>
+        <li><a href="blog.html" class="mobile-menu-link">Blog</a></li>
+        <li><a href="contact.html" class="mobile-menu-link" style="color:var(--teal-mid);">Book Appointment</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Viewport Section -->
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container grid-2">
+        <div class="hero-content scroll-reveal">
+          <span class="section-tag">LEADERS IN MUSCULOSKELETAL CARE</span>
+          <h1 class="hero-title glass-typography">Precision Care for Your Movement</h1>
+          <p class="hero-subtitle">Experience luxury orthopedic services designed to restore your lifestyle. Our elite physicians leverage cutting-edge joint preservation, robotic surgery, and sports medicine protocols.</p>
+          <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:12px;">
+            <a href="contact.html" class="liquid-btn liquid-btn-accent">
+              <span>Start Your Recovery</span>
+            </a>
+            <a href="services.html" class="liquid-btn">
+              <span>Explore Treatments</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-area scroll-reveal">
+          <div class="glass-card hero-glass-card layer-fg float-drift">
+            <img src="/src/assets/hero-joint.png" alt="Abstract wireframe joint anatomy model" class="hero-wireframe-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Stats Bar -->
+    <section class="trust-bar container scroll-reveal">
+      <div class="glass-card trust-capsule-container layer-mid">
+        <div class="trust-capsule">
+          <i data-lucide="check-circle"></i>
+          <div>
+            <div class="trust-stat">15K+</div>
+            <div class="trust-label">Surgeries Performed</div>
+          </div>
+        </div>
+        <div class="trust-capsule">
+          <i data-lucide="shield"></i>
+          <div>
+            <div class="trust-stat">98%</div>
+            <div class="trust-label">Success Rate</div>
+          </div>
+        </div>
+        <div class="trust-capsule">
+          <i data-lucide="clock"></i>
+          <div>
+            <div class="trust-stat">25+</div>
+            <div class="trust-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tag">OUR SPECIALTIES</span>
+          <h2 class="section-title">Comprehensive Spine & Joint Solutions</h2>
+          <p>We treat a wide range of orthopedic conditions, providing tailored plans that combine medical excellence with rehabilitation care.</p>
+        </div>
+        
+        <div class="grid-3 scroll-reveal">
+          <!-- Card 1 -->
+          <div class="glass-card service-preview-card glass-card-tilt layer-bg">
+            <div class="floating-icon-wrapper">
+              <i data-lucide="zap"></i>
+            </div>
+            <h3 class="service-title">Sports Medicine</h3>
+            <p class="service-desc">Innovative therapies and minimally invasive procedures to restore movement, relieve pain, and return athletes back to sports quickly.</p>
+            <a href="services.html#sports-medicine" class="service-link">Explore <i data-lucide="chevron-right"></i></a>
+          </div>
+          <!-- Card 2 -->
+          <div class="glass-card service-preview-card glass-card-tilt layer-bg blue-theme">
+            <div class="floating-icon-wrapper blue-icon">
+              <i data-lucide="activity"></i>
+            </div>
+            <h3 class="service-title">Joint Replacement</h3>
+            <p class="service-desc">Advanced robotic hip and knee resurfacing options tailored to improve anatomy and support weightless, pain-free walking.</p>
+            <a href="services.html#joint-replacement" class="service-link">Explore <i data-lucide="chevron-right"></i></a>
+          </div>
+          <!-- Card 3 -->
+          <div class="glass-card service-preview-card glass-card-tilt layer-bg">
+            <div class="floating-icon-wrapper">
+              <i data-lucide="chevron-down"></i>
+            </div>
+            <h3 class="service-title">Spine Surgery</h3>
+            <p class="service-desc">Minimally invasive spine procedures to treat scoliosis, herniated discs, and spinal stenosis with swift recovery pathways.</p>
+            <a href="services.html#spine-surgery" class="service-link">Explore <i data-lucide="chevron-right"></i></a>
+          </div>
+          <!-- Card 4 -->
+          <div class="glass-card service-preview-card glass-card-tilt layer-bg blue-theme">
+            <div class="floating-icon-wrapper blue-icon">
+              <i data-lucide="smile"></i>
+            </div>
+            <h3 class="service-title">Pediatric Orthopedics</h3>
+            <p class="service-desc">Expert bone growth and musculoskeletal correction services for children, treating fractures and congenital deviations.</p>
+            <a href="services.html#pediatric-orthopedics" class="service-link">Explore <i data-lucide="chevron-right"></i></a>
+          </div>
+          <!-- Card 5 -->
+          <div class="glass-card service-preview-card glass-card-tilt layer-bg">
+            <div class="floating-icon-wrapper">
+              <i data-lucide="user"></i>
+            </div>
+            <h3 class="service-title">Hand & Wrist Care</h3>
+            <p class="service-desc">Reconstruction and treatment for carpal tunnel, arthritis, tendon damage, and complex finger injuries.</p>
+            <a href="services.html#hand-wrist" class="service-link">Explore <i data-lucide="chevron-right"></i></a>
+          </div>
+          <!-- Card 6 -->
+          <div class="glass-card service-preview-card glass-card-tilt layer-bg blue-theme">
+            <div class="floating-icon-wrapper blue-icon">
+              <i data-lucide="shield"></i>
+            </div>
+            <h3 class="service-title">Trauma & Fracture</h3>
+            <p class="service-desc">Immediate diagnostic and advanced stabilization treatments for structural bone fractures and emergency trauma injuries.</p>
+            <a href="services.html#trauma" class="service-link">Explore <i data-lucide="chevron-right"></i></a>
+          </div>
+          <!-- Card 7 -->
+          <div class="glass-card service-preview-card glass-card-tilt layer-bg">
+            <div class="floating-icon-wrapper">
+              <i data-lucide="activity"></i>
+            </div>
+            <h3 class="service-title">Foot & Ankle Surgery</h3>
+            <p class="service-desc">Advanced reconstructive treatments for ankle fractures, arthritis, tendon ruptures, and foot alignment issues.</p>
+            <a href="services.html#foot-ankle" class="service-link">Explore <i data-lucide="chevron-right"></i></a>
+          </div>
+          <!-- Card 8 -->
+          <div class="glass-card service-preview-card glass-card-tilt layer-bg blue-theme">
+            <div class="floating-icon-wrapper blue-icon">
+              <i data-lucide="zap"></i>
+            </div>
+            <h3 class="service-title">Shoulder & Elbow</h3>
+            <p class="service-desc">Complex rotator cuff repair, shoulder joint replacement, instability correction, and tennis elbow treatments.</p>
+            <a href="services.html#shoulder-elbow" class="service-link">Explore <i data-lucide="chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us / Value Proposition -->
+    <section class="section-padding" style="background: rgba(255, 255, 255, 0.05);">
+      <div class="container grid-2">
+        <div class="scroll-reveal">
+          <span class="section-tag">CLINIC DISTINCTION</span>
+          <h2 class="section-title" style="margin-bottom: 30px;">World-Class Clinical Standards</h2>
+          
+          <div class="value-prop-item">
+            <div class="value-prop-icon">
+              <i data-lucide="award"></i>
+            </div>
+            <div class="value-prop-content">
+              <h4>Robotic-Assisted Navigation</h4>
+              <p>Our surgeons leverage computed tomography modeling systems that guide joint implants with accuracy down to sub-millimeters.</p>
+            </div>
+          </div>
+          <div class="value-prop-item">
+            <div class="value-prop-icon">
+              <i data-lucide="shield"></i>
+            </div>
+            <div class="value-prop-content">
+              <h4>Ultra-Low Risk Protocols</h4>
+              <p>We implement clinically proven safety measures, resulting in patient infection rates 90% below the national standard.</p>
+            </div>
+          </div>
+          <div class="value-prop-item">
+            <div class="value-prop-icon">
+              <i data-lucide="heart"></i>
+            </div>
+            <div class="value-prop-content">
+              <h4>Elite Concierge Care</h4>
+              <p>Every client is matched with a recovery manager who orchestrates logistics, pre-op, and tailored physical therapy directly.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="clinic-showcase-container scroll-reveal">
+          <div class="clinic-img-frame float-drift-delayed">
+            <img src="/src/assets/clinic.png" alt="Aura Luxury Medical Clinic Interior">
+            <div class="glass-card clinic-credential-overlay layer-fg">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                  <h4 style="font-size:1.1rem; color:var(--text-dark);">Aura Surgical Suites</h4>
+                  <p style="font-size:0.8rem; color:var(--text-muted);">Joint Commission Accredited Facility</p>
+                </div>
+                <div style="background:var(--teal-ultra-light); border-radius:50%; width:44px; height:44px; display:flex; justify-content:center; align-items:center; color:var(--teal-mid);">
+                  <i data-lucide="award"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Doctors Teaser Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tag">LEAD PHYSICIANS</span>
+          <h2 class="section-title">Meet Our Orthopedic Pioneers</h2>
+          <p>Our specialists are board-certified, research-active leaders who hold fellowships at premier institutions globally.</p>
+        </div>
+
+        <div class="doctors-teaser-scroll scroll-reveal">
+          <!-- Dr. Sarah Jenkins -->
+          <div class="glass-card doctor-teaser-card layer-bg">
+            <div class="doctor-avatar-container">
+              <img src="/src/assets/doctors.png" alt="Dr. Sarah Jenkins" class="doctor-avatar">
+            </div>
+            <h3 class="doctor-teaser-name">Dr. Sarah Jenkins</h3>
+            <div class="doctor-teaser-spec">Sports Medicine</div>
+            <a href="doctors.html" class="liquid-btn" style="padding:10px 20px; font-size:0.8rem;">View Profile</a>
+          </div>
+          <!-- Dr. Arthur Pendelton -->
+          <div class="glass-card doctor-teaser-card layer-bg">
+            <div class="doctor-avatar-container">
+              <img src="/src/assets/doctors.png" alt="Dr. Arthur Pendelton" class="doctor-avatar">
+            </div>
+            <h3 class="doctor-teaser-name">Dr. Arthur Pendelton</h3>
+            <div class="doctor-teaser-spec">Spine Surgery</div>
+            <a href="doctors.html" class="liquid-btn" style="padding:10px 20px; font-size:0.8rem;">View Profile</a>
+          </div>
+          <!-- Dr. Robert Chen -->
+          <div class="glass-card doctor-teaser-card layer-bg">
+            <div class="doctor-avatar-container">
+              <img src="/src/assets/doctors.png" alt="Dr. Robert Chen" class="doctor-avatar">
+            </div>
+            <h3 class="doctor-teaser-name">Dr. Robert Chen</h3>
+            <div class="doctor-teaser-spec">Joint Replacement</div>
+            <a href="doctors.html" class="liquid-btn" style="padding:10px 20px; font-size:0.8rem;">View Profile</a>
+          </div>
+          <!-- Dr. Maya Lin -->
+          <div class="glass-card doctor-teaser-card layer-bg">
+            <div class="doctor-avatar-container">
+              <img src="/src/assets/doctors.png" alt="Dr. Maya Lin" class="doctor-avatar">
+            </div>
+            <h3 class="doctor-teaser-name">Dr. Maya Lin</h3>
+            <div class="doctor-teaser-spec">Hand & Wrist</div>
+            <a href="doctors.html" class="liquid-btn" style="padding:10px 20px; font-size:0.8rem;">View Profile</a>
+          </div>
+          <!-- Dr. Elena Rostova -->
+          <div class="glass-card doctor-teaser-card layer-bg">
+            <div class="doctor-avatar-container">
+              <img src="/src/assets/doctors.png" alt="Dr. Elena Rostova" class="doctor-avatar">
+            </div>
+            <h3 class="doctor-teaser-name">Dr. Elena Rostova</h3>
+            <div class="doctor-teaser-spec">Pediatric Ortho</div>
+            <a href="doctors.html" class="liquid-btn" style="padding:10px 20px; font-size:0.8rem;">View Profile</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Slider -->
+    <section class="section-padding" style="background: rgba(224, 242, 254, 0.25);">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tag">SUCCESS DIALOGUES</span>
+          <h2 class="section-title">Restored Mobility Stories</h2>
+          <p>Read from clients who recovered structural movement and returned to their active lifestyles.</p>
+        </div>
+
+        <div class="testimonials-slider scroll-reveal">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide active">
+            <div class="glass-card testimonial-card layer-fg">
+              <div class="testimonial-stars">
+                <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+              </div>
+              <p class="testimonial-quote">"After my robotic-assisted knee replacement with Dr. Chen, I walked pain-free within three weeks. The care coordination at Aura felt like a luxury retreat rather than standard medical care."</p>
+              <div class="testimonial-author">
+                <div style="text-align:center;">
+                  <div class="testimonial-author-name">David L. Miller</div>
+                  <div class="testimonial-author-condition">Total Knee Replacement Patient</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="glass-card testimonial-card layer-fg">
+              <div class="testimonial-stars">
+                <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+              </div>
+              <p class="testimonial-quote">"As an avid golfer, spine pain threatened to end my hobby. Dr. Pendelton performed minimally invasive decompression, and I am back on the fairway without stiffness or soreness."</p>
+              <div class="testimonial-author">
+                <div style="text-align:center;">
+                  <div class="testimonial-author-name">Clara Vance</div>
+                  <div class="testimonial-author-condition">Herniated Disc Patient</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="glass-card testimonial-card layer-fg">
+              <div class="testimonial-stars">
+                <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+              </div>
+              <p class="testimonial-quote">"My daughter's ACL tear was devastated news for her collegiate soccer plans. Dr. Jenkins performed a graft repair, and her strength scores now exceed her pre-injury baseline."</p>
+              <div class="testimonial-author">
+                <div style="text-align:center;">
+                  <div class="testimonial-author-name">Marcus G. (Father of Chloe)</div>
+                  <div class="testimonial-author-condition">ACL Reconstruction Patient</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-indicators" id="carousel-indicators">
+          <!-- Dots generated dynamically by script -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking CTA / Quick Form -->
+    <section class="appointment-cta-section">
+      <div class="container">
+        <div class="glass-card appointment-cta-panel layer-fg scroll-reveal">
+          <h2>Begin Your Journey to Movement</h2>
+          <p>Book a premium diagnostic consult today. Provide your details below for a quick scheduling call.</p>
+          
+          <form class="appointment-quick-form" action="contact.html" method="GET">
+            <div class="form-group">
+              <label for="quick-name" class="glass-form-label" style="color:white;">Your Name</label>
+              <input type="text" id="quick-name" name="name" class="glass-input" placeholder="e.g. John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="quick-phone" class="glass-form-label" style="color:white;">Phone Number</label>
+              <input type="tel" id="quick-phone" name="phone" class="glass-input" placeholder="e.g. 555-0199" required>
+            </div>
+            <div class="form-group">
+              <label for="quick-service" class="glass-form-label" style="color:white;">Sought Care</label>
+              <select id="quick-service" name="service" class="glass-input glass-select" required>
+                <option value="sports-medicine">Sports Medicine</option>
+                <option value="joint-replacement">Joint Replacement</option>
+                <option value="spine-surgery">Spine Surgery</option>
+                <option value="pediatric">Pediatric Ortho</option>
+                <option value="hand-wrist">Hand & Wrist Care</option>
+                <option value="trauma">Trauma & Fracture</option>
+              </select>
+            </div>
+            <button type="submit" class="liquid-btn liquid-btn-accent" style="height:52px; width:100%; border:none;">
+              <span>Start Recovery</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Multi-column Glass Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">
+          <i data-lucide="activity"></i>
+          <span>AURA ORTHOPEDICS</span>
+        </a>
+        <p class="footer-desc">Premium skeletal health and movement restoration. Restoring vitality, strength, and life coordinates to active individuals.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Facebook"><i data-lucide="star"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter"><i data-lucide="activity"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i data-lucide="shield"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Lead Physicians</a></li>
+          <li><a href="conditions.html">Patient Guides</a></li>
+          <li><a href="about.html">Our Clinic</a></li>
+          <li><a href="contact.html">Book Appointment</a></li>
+          <li><a href="blog.html">Health Insights</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#sports">Sports Medicine</a></li>
+          <li><a href="services.html#joint">Joint Replacement</a></li>
+          <li><a href="services.html#spine">Spine Care</a></li>
+          <li><a href="services.html#pediatric">Pediatric Ortho</a></li>
+          <li><a href="services.html#hand">Hand & Wrist</a></li>
+          <li><a href="services.html#trauma">Trauma Surgery</a></li>
+          <li><a href="services.html#foot-ankle">Foot & Ankle</a></li>
+          <li><a href="services.html#shoulder-elbow">Shoulder & Elbow</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Contact Us</h4>
+        <div class="footer-contact-info">
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin"></i>
+            <p>Aura Surgical Plaza, Suite 400<br>9020 Beverly Hills Blvd, CA 90210</p>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="phone"></i>
+            <p>+1 (800) 555-AURA<br>Mon - Fri: 8:00 AM - 6:00 PM</p>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="mail"></i>
+            <p>concierge@auraclinic.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Aura Orthopedic Clinic. All rights reserved. | <a href="#" style="color:var(--text-muted); text-decoration:none;">Privacy Policy</a> | <a href="#" style="color:var(--text-muted); text-decoration:none;">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <!-- Live Chat Widget -->
+  <div class="chat-widget" id="chat-widget">
+    <div class="chat-bubble" id="chat-bubble" aria-label="Open chat assistant">
+      <i data-lucide="message-square"></i>
+    </div>
+    
+    <div class="glass-card chat-panel layer-fg" id="chat-panel">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-status-dot"></div>
+          <span class="chat-header-title">Aura Concierge Desk</span>
+        </div>
+        <button class="chat-close-btn" id="chat-close" aria-label="Close Chat">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      
+      <div class="chat-messages" id="chat-messages">
+        <div class="chat-msg bot">
+          Welcome to Aura Orthopedics. I am your concierge assistant. How can I help guide your recovery today?
+        </div>
+      </div>
+      
+      <form class="chat-input-area" id="chat-form">
+        <input type="text" class="glass-input" id="chat-input" placeholder="Type a message..." required>
+        <button type="submit" class="chat-send-btn" aria-label="Send Message">
+          <i data-lucide="send"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/carousel.js"></script>
+</body>
+</html>

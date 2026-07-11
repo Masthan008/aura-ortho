@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment | Aura Orthopedics Clinic</title>
+  <meta name="description" content="Use our premium online scheduling tool to reserve your consultation slot. Check calendar times, specify doctors, and initiate recovery.">
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- Custom Page Loader -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-spinner">
+      <div class="loader-inner">
+        <span class="loader-logo">AURA</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Morphing Gradients -->
+  <div class="bg-mesh-container">
+    <div class="bg-blob blob-teal"></div>
+    <div class="bg-blob blob-blue"></div>
+    <div class="bg-blob blob-green"></div>
+  </div>
+
+  <!-- Sticky Glass Navbar -->
+  <header class="navbar layer-mid">
+    <a href="index.html" class="nav-brand">
+      <i data-lucide="activity"></i>
+      <span>AURA ORTHO</span>
+    </a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+        <li><a href="conditions.html" class="nav-link">Conditions</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="nav-cta-btn">Book Now</a>
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+      <i data-lucide="menu"></i>
+    </button>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <div class="mobile-menu-container">
+      <button class="doctor-modal-close" id="mobile-menu-close" aria-label="Close Menu">
+        <i data-lucide="x"></i>
+      </button>
+      <ul class="mobile-menu-list">
+        <li><a href="index.html" class="mobile-menu-link">Home</a></li>
+        <li><a href="services.html" class="mobile-menu-link">Services</a></li>
+        <li><a href="doctors.html" class="mobile-menu-link">Doctors</a></li>
+        <li><a href="conditions.html" class="mobile-menu-link">Conditions</a></li>
+        <li><a href="about.html" class="mobile-menu-link">About</a></li>
+        <li><a href="blog.html" class="mobile-menu-link">Blog</a></li>
+        <li><a href="contact.html" class="mobile-menu-link" style="color:var(--teal-mid);">Book Appointment</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Sub Hero Header -->
+  <section class="page-hero">
+    <div class="container scroll-reveal">
+      <span class="section-tag">RESERVE A CONSULTATION</span>
+      <h1 class="page-hero-title text-gradient glass-typography">Partnering in Your Rehabilitation</h1>
+      <p class="page-hero-subtitle">Our booking engine provides direct coordination for diagnostic appointments. Step through our custom scheduler wizard below.</p>
+    </div>
+  </section>
+
+  <main id="main-content">
+    
+    <!-- Booking Wizard Section -->
+    <section class="section-padding" style="padding-top:20px;">
+      <div class="container">
+        
+        <div class="glass-card booking-wizard-container layer-fg scroll-reveal">
+          
+          <!-- Steps Bar -->
+          <div class="booking-steps-bar">
+            <div class="booking-step-indicator active">
+              <div class="step-num">1</div>
+              <span class="step-label">Service</span>
+            </div>
+            <div class="booking-step-indicator">
+              <div class="step-num">2</div>
+              <span class="step-label">Physician</span>
+            </div>
+            <div class="booking-step-indicator">
+              <div class="step-num">3</div>
+              <span class="step-label">Calendar</span>
+            </div>
+            <div class="booking-step-indicator">
+              <div class="step-num">4</div>
+              <span class="step-label">Details</span>
+            </div>
+            <div class="booking-step-indicator">
+              <div class="step-num">5</div>
+              <span class="step-label">Done</span>
+            </div>
+          </div>
+
+          <!-- STEP 1: Select Service -->
+          <div class="booking-step-panel active" id="step-1-panel">
+            <h3 style="font-size:1.4rem; margin-bottom:12px; text-align:center;">Select Medical Focus</h3>
+            <p style="text-align:center; color:var(--text-muted); margin-bottom:32px; font-size:0.95rem;">Choose the department matching your skeletal care needs.</p>
+            
+            <div class="selection-grid">
+              <div class="glass-card select-card service-select-card" data-service="sports-medicine">
+                <div class="select-card-icon"><i data-lucide="zap"></i></div>
+                <h4>Sports Medicine</h4>
+                <p>Ligament strains, muscle tears, and arthroscopic interventions.</p>
+              </div>
+              <div class="glass-card select-card service-select-card" data-service="joint-replacement">
+                <div class="select-card-icon"><i data-lucide="activity"></i></div>
+                <h4>Joint Care</h4>
+                <p>Robotic-assisted hip and knee joint resurfacings.</p>
+              </div>
+              <div class="glass-card select-card service-select-card" data-service="spine-surgery">
+                <div class="select-card-icon"><i data-lucide="chevron-down"></i></div>
+                <h4>Spine Surgery</h4>
+                <p>Spinal stenosis, disc decompression and curvature.</p>
+              </div>
+              <div class="glass-card select-card service-select-card" data-service="pediatric">
+                <div class="select-card-icon"><i data-lucide="smile"></i></div>
+                <h4>Pediatric Ortho</h4>
+                <p>Growth screening and congenital skeletal adjustments.</p>
+              </div>
+              <div class="glass-card select-card service-select-card" data-service="hand-wrist">
+                <div class="select-card-icon"><i data-lucide="user"></i></div>
+                <h4>Hand & Wrist</h4>
+                <p>Carpal tunnel, nerve relief, and manual dexterity.</p>
+              </div>
+              <div class="glass-card select-card service-select-card" data-service="trauma">
+                <div class="select-card-icon"><i data-lucide="shield"></i></div>
+                <h4>Trauma Care</h4>
+                <p>Emergency bone fractures and advanced rod fixations.</p>
+              </div>
+              <div class="glass-card select-card service-select-card" data-service="foot-ankle">
+                <div class="select-card-icon"><i data-lucide="activity"></i></div>
+                <h4>Foot & Ankle</h4>
+                <p>Ankle repairs, bunions, and plantar fasciitis release.</p>
+              </div>
+              <div class="glass-card select-card service-select-card" data-service="shoulder-elbow">
+                <div class="select-card-icon"><i data-lucide="zap"></i></div>
+                <h4>Shoulder & Elbow</h4>
+                <p>Rotator cuff repairs, stability, and tennis elbow release.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 2: Select Doctor -->
+          <div class="booking-step-panel" id="step-2-panel">
+            <h3 style="font-size:1.4rem; margin-bottom:12px; text-align:center;">Choose Your Surgeon</h3>
+            <p style="text-align:center; color:var(--text-muted); margin-bottom:32px; font-size:0.95rem;">We filtered specialists matching your sought care selection.</p>
+            
+            <div class="selection-grid" id="doctors-selection-grid">
+              <!-- Loaded dynamically by booking.js based on selected service -->
+            </div>
+          </div>
+
+          <!-- STEP 3: Date & Time Picker -->
+          <div class="booking-step-panel" id="step-3-panel">
+            <h3 style="font-size:1.4rem; margin-bottom:12px; text-align:center;">Select Appointment Time</h3>
+            <p style="text-align:center; color:var(--text-muted); margin-bottom:32px; font-size:0.95rem;">Pick an open slot on our custom calendar UI (Closed on Sundays).</p>
+            
+            <div class="calendar-layout">
+              <!-- Custom Calendar Builder -->
+              <div class="calendar-widget layer-bg">
+                <div class="calendar-header">
+                  <button type="button" class="calendar-nav-btn" id="calendar-prev-month" aria-label="Previous Month">
+                    <i data-lucide="chevron-left" style="width:16px; height:16px;"></i>
+                  </button>
+                  <div class="calendar-month-title" id="calendar-month-title"></div>
+                  <button type="button" class="calendar-nav-btn" id="calendar-next-month" aria-label="Next Month">
+                    <i data-lucide="chevron-right" style="width:16px; height:16px;"></i>
+                  </button>
+                </div>
+                
+                <div class="calendar-grid">
+                  <!-- Weekdays -->
+                  <div class="calendar-weekday">Su</div>
+                  <div class="calendar-weekday">Mo</div>
+                  <div class="calendar-weekday">Tu</div>
+                  <div class="calendar-weekday">We</div>
+                  <div class="calendar-weekday">Th</div>
+                  <div class="calendar-weekday">Fr</div>
+                  <div class="calendar-weekday">Sa</div>
+                </div>
+                
+                <div class="calendar-grid" id="calendar-days-grid">
+                  <!-- Days injected by booking.js -->
+                </div>
+              </div>
+
+              <!-- Time Slots Grid -->
+              <div class="time-slots-container">
+                <div class="time-slots-header">Available Timings:</div>
+                <div class="time-slots-grid" id="time-slots-grid">
+                  <!-- Loaded dynamically by booking.js after selecting day -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 4: Patient Details -->
+          <div class="booking-step-panel" id="step-4-panel">
+            <h3 style="font-size:1.4rem; margin-bottom:12px; text-align:center;">Contact Information</h3>
+            <p style="text-align:center; color:var(--text-muted); margin-bottom:32px; font-size:0.95rem;">Provide your credentials to register the appointment slot.</p>
+            
+            <div style="max-width:550px; margin: 0 auto; display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+              <div class="form-group" style="grid-column: span 2;">
+                <label for="patient-name" class="glass-form-label">Full Name</label>
+                <input type="text" id="patient-name" class="glass-input details-input" placeholder="e.g. Emily Roberts" required>
+              </div>
+              <div class="form-group">
+                <label for="patient-phone" class="glass-form-label">Phone Number</label>
+                <input type="tel" id="patient-phone" class="glass-input details-input" placeholder="e.g. 555-0144" required>
+              </div>
+              <div class="form-group">
+                <label for="patient-email" class="glass-form-label">Email Address</label>
+                <input type="email" id="patient-email" class="glass-input details-input" placeholder="e.g. emily@domain.com" required>
+              </div>
+              <div class="form-group" style="grid-column: span 2;">
+                <label for="patient-notes" class="glass-form-label">Describe Symptoms (Optional)</label>
+                <textarea id="patient-notes" class="glass-input details-input" style="height:100px; resize:none;" placeholder="Detail any joint swelling, stiffness, or injuries..."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 5: Success Confirmation -->
+          <div class="booking-step-panel" id="step-5-panel">
+            <div class="success-card">
+              <div class="success-checkmark-circle">
+                <i data-lucide="check" style="width:36px; height:36px;"></i>
+              </div>
+              <h3>Appointment Reserved</h3>
+              <p style="color:var(--text-muted); max-width:480px; margin:0 auto 24px auto; font-size:0.95rem;">Your consultation request is registered. Aura's scheduling coordinator will call you within two business hours to finalize checkup logistics.</p>
+              
+              <div class="success-details">
+                <div class="success-detail-row">
+                  <span style="font-weight:600; color:var(--text-muted);">Sought Clinic Care</span>
+                  <span id="summary-service" style="font-weight:700; color:var(--text-dark);"></span>
+                </div>
+                <div class="success-detail-row">
+                  <span style="font-weight:600; color:var(--text-muted);">Attending Physician</span>
+                  <span id="summary-doctor" style="font-weight:700; color:var(--text-dark);"></span>
+                </div>
+                <div class="success-detail-row">
+                  <span style="font-weight:600; color:var(--text-muted);">Appointment Date</span>
+                  <span id="summary-date" style="font-weight:700; color:var(--text-dark);"></span>
+                </div>
+                <div class="success-detail-row">
+                  <span style="font-weight:600; color:var(--text-muted);">Reserved Slot</span>
+                  <span id="summary-time" style="font-weight:700; color:var(--text-dark);"></span>
+                </div>
+                <div class="success-detail-row">
+                  <span style="font-weight:600; color:var(--text-muted);">Registered Name</span>
+                  <span id="summary-patient" style="font-weight:700; color:var(--text-dark);"></span>
+                </div>
+              </div>
+
+              <a href="index.html" class="liquid-btn" style="margin-top:12px;">Return Homepage</a>
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="wizard-nav-buttons" id="wizard-buttons-bar">
+            <button type="button" class="filter-btn" id="wizard-prev-btn">Back</button>
+            <button type="button" class="liquid-btn liquid-btn-accent" id="wizard-next-btn" disabled>Next Step</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- General Contact details and Map section -->
+    <section class="section-padding" style="background: rgba(255,255,255,0.03);">
+      <div class="container">
+        
+        <div class="contact-grid scroll-reveal">
+          <!-- Card 1 -->
+          <div class="glass-card contact-card layer-bg">
+            <div class="contact-icon"><i data-lucide="phone"></i></div>
+            <h3>Call Concierge Desk</h3>
+            <p class="contact-value">+1 (800) 555-AURA<br>General scheduling & billing</p>
+            <a href="tel:+18005552872" class="liquid-btn" style="padding:8px 20px; font-size:0.8rem;">Call Direct</a>
+          </div>
+          <!-- Card 2 -->
+          <div class="glass-card contact-card layer-bg green-theme">
+            <div class="contact-icon"><i data-lucide="mail"></i></div>
+            <h3>Email Scheduling</h3>
+            <p class="contact-value">concierge@auraclinic.com<br>Response within 2 hours</p>
+            <a href="mailto:concierge@auraclinic.com" class="liquid-btn" style="padding:8px 20px; font-size:0.8rem;">Email Direct</a>
+          </div>
+          <!-- Card 3 -->
+          <div class="glass-card contact-card layer-bg">
+            <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+            <h3>Clinic Location</h3>
+            <p class="contact-value">Suite 400, 9020 Beverly Hills Blvd<br>Beverly Hills, CA 90210</p>
+            <a href="#" class="liquid-btn" style="padding:8px 20px; font-size:0.8rem;">Get Directions</a>
+          </div>
+        </div>
+
+        <!-- Stylized Map container -->
+        <div class="map-container scroll-reveal">
+          <div class="custom-map-canvas">
+            <div class="map-grid-overlay"></div>
+            
+            <!-- Map Roads simulating stylized custom maps -->
+            <div class="map-road" style="width:100%; height:12px; top:40%; left:0;"></div>
+            <div class="map-road" style="width:100%; height:12px; top:65%; left:0;"></div>
+            <div class="map-road" style="width:12px; height:100%; left:30%; top:0;"></div>
+            <div class="map-road" style="width:12px; height:100%; left:75%; top:0;"></div>
+            
+            <!-- Map Pin -->
+            <div class="map-pin" style="top:55%; left:70%;">
+              <div class="map-pin-pulse"></div>
+              <div class="map-pin-icon">
+                <i data-lucide="map-pin" style="width:14px; height:14px;"></i>
+              </div>
+              <div class="map-pin-label">Aura Surgical Plaza</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">
+          <i data-lucide="activity"></i>
+          <span>AURA ORTHOPEDICS</span>
+        </a>
+        <p class="footer-desc">Premium skeletal health and movement restoration. Restoring vitality, strength, and life coordinates to active individuals.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Facebook"><i data-lucide="star"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter"><i data-lucide="activity"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i data-lucide="shield"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Lead Physicians</a></li>
+          <li><a href="conditions.html">Patient Guides</a></li>
+          <li><a href="about.html">Our Clinic</a></li>
+          <li><a href="contact.html">Book Appointment</a></li>
+          <li><a href="blog.html">Health Insights</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#sports">Sports Medicine</a></li>
+          <li><a href="services.html#joint">Joint Replacement</a></li>
+          <li><a href="services.html#spine">Spine Care</a></li>
+          <li><a href="services.html#pediatric">Pediatric Ortho</a></li>
+          <li><a href="services.html#hand">Hand & Wrist</a></li>
+          <li><a href="services.html#trauma">Trauma Surgery</a></li>
+          <li><a href="services.html#foot-ankle">Foot & Ankle</a></li>
+          <li><a href="services.html#shoulder-elbow">Shoulder & Elbow</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Contact Us</h4>
+        <div class="footer-contact-info">
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin"></i>
+            <p>Aura Surgical Plaza, Suite 400<br>9020 Beverly Hills Blvd, CA 90210</p>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="phone"></i>
+            <p>+1 (800) 555-AURA<br>Mon - Fri: 8:00 AM - 6:00 PM</p>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="mail"></i>
+            <p>concierge@auraclinic.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Aura Orthopedic Clinic. All rights reserved. | <a href="#" style="color:var(--text-muted); text-decoration:none;">Privacy Policy</a> | <a href="#" style="color:var(--text-muted); text-decoration:none;">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <!-- Live Chat Widget -->
+  <div class="chat-widget" id="chat-widget">
+    <div class="chat-bubble" id="chat-bubble" aria-label="Open chat assistant">
+      <i data-lucide="message-square"></i>
+    </div>
+    
+    <div class="glass-card chat-panel layer-fg" id="chat-panel">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-status-dot"></div>
+          <span class="chat-header-title">Aura Concierge Desk</span>
+        </div>
+        <button class="chat-close-btn" id="chat-close" aria-label="Close Chat">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      
+      <div class="chat-messages" id="chat-messages">
+        <div class="chat-msg bot">
+          Welcome to Aura Orthopedics. I am your concierge assistant. How can I help guide your recovery today?
+        </div>
+      </div>
+      
+      <form class="chat-input-area" id="chat-form">
+        <input type="text" class="glass-input" id="chat-input" placeholder="Type a message..." required>
+        <button type="submit" class="chat-send-btn" aria-label="Send Message">
+          <i data-lucide="send"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/booking.js"></script>
+
+  <!-- Parse query parameters to preselect service step -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const serviceParam = urlParams.get('service');
+      const nameParam = urlParams.get('name');
+      const phoneParam = urlParams.get('phone');
+      
+      if (serviceParam) {
+        // Preselect the service
+        const card = document.querySelector(`.service-select-card[data-service="${serviceParam}"]`);
+        if (card) {
+          setTimeout(() => {
+            card.click();
+          }, 300);
+        }
+      }
+
+      if (nameParam) {
+        const nameInput = document.getElementById('patient-name');
+        if (nameInput) nameInput.value = nameParam;
+      }
+
+      if (phoneParam) {
+        const phoneInput = document.getElementById('patient-phone');
+        if (phoneInput) phoneInput.value = phoneParam;
+      }
+    });
+  </script>
+</body>
+</html>

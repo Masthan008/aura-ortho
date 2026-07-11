@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Resources & Conditions | Aura Orthopedics</title>
+  <meta name="description" content="Browse our orthopedic condition library, download post-operative recovery guides, and read general clinic guidelines and FAQs.">
+  <script type="module" crossorigin src="/assets/main-DcuHNapv.js"></script>
+  <script type="module" crossorigin src="/assets/filters-DhLtZL5V.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-DWtcfr_1.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- Custom Page Loader -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-spinner">
+      <div class="loader-inner">
+        <span class="loader-logo">AURA</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Morphing Gradients -->
+  <div class="bg-mesh-container">
+    <div class="bg-blob blob-teal"></div>
+    <div class="bg-blob blob-blue"></div>
+    <div class="bg-blob blob-green"></div>
+  </div>
+
+  <!-- Sticky Glass Navbar -->
+  <header class="navbar layer-mid">
+    <a href="index.html" class="nav-brand">
+      <i data-lucide="activity"></i>
+      <span>AURA ORTHO</span>
+    </a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+        <li><a href="conditions.html" class="nav-link active">Conditions</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="nav-cta-btn">Book Now</a>
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+      <i data-lucide="menu"></i>
+    </button>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <div class="mobile-menu-container">
+      <button class="doctor-modal-close" id="mobile-menu-close" aria-label="Close Menu">
+        <i data-lucide="x"></i>
+      </button>
+      <ul class="mobile-menu-list">
+        <li><a href="index.html" class="mobile-menu-link">Home</a></li>
+        <li><a href="services.html" class="mobile-menu-link">Services</a></li>
+        <li><a href="doctors.html" class="mobile-menu-link">Doctors</a></li>
+        <li><a href="conditions.html" class="mobile-menu-link">Conditions</a></li>
+        <li><a href="about.html" class="mobile-menu-link">About</a></li>
+        <li><a href="blog.html" class="mobile-menu-link">Blog</a></li>
+        <li><a href="contact.html" class="mobile-menu-link" style="color:var(--teal-mid);">Book Appointment</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Sub Hero Header -->
+  <section class="page-hero">
+    <div class="container scroll-reveal">
+      <span class="section-tag">EDUCATION & HEALTH</span>
+      <h1 class="page-hero-title text-gradient glass-typography">Patient Resources & Conditions</h1>
+      <p class="page-hero-subtitle">Learn about skeletal pathologies, download post-operative recovery timelines, and explore diagnostic guidelines.</p>
+    </div>
+  </section>
+
+  <main id="main-content">
+
+    <!-- Condition Library Section -->
+    <section class="section-padding" style="padding-top:20px;">
+      <div class="container">
+        
+        <!-- Search bar -->
+        <div class="search-container scroll-reveal">
+          <div class="search-input-wrapper">
+            <i data-lucide="search"></i>
+            <input type="text" id="condition-search" class="glass-input" placeholder="Search orthopedic conditions (e.g. Arthritis, ACL)...">
+          </div>
+        </div>
+
+        <!-- Body Part Tabs -->
+        <div class="filter-tabs scroll-reveal" style="margin-bottom:40px;">
+          <button class="filter-btn part-filter-btn active" data-filter="all">All Regions</button>
+          <button class="filter-btn part-filter-btn" data-filter="knee">Knee</button>
+          <button class="filter-btn part-filter-btn" data-filter="hip">Hip</button>
+          <button class="filter-btn part-filter-btn" data-filter="spine">Spine</button>
+          <button class="filter-btn part-filter-btn" data-filter="shoulder">Shoulder</button>
+          <button class="filter-btn part-filter-btn" data-filter="hand">Hand & Wrist</button>
+          <button class="filter-btn part-filter-btn" data-filter="foot">Foot & Ankle</button>
+        </div>
+
+        <!-- Conditions Grid -->
+        <div class="grid-3 scroll-reveal" id="conditions-grid">
+          
+          <!-- Osteoarthritis -->
+          <div class="condition-card-wrapper" data-name="Osteoarthritis" data-parts="knee,hip,hand">
+            <div class="glass-card condition-card layer-bg">
+              <div class="floating-icon-wrapper"><i data-lucide="activity"></i></div>
+              <h3 class="condition-title">Osteoarthritis</h3>
+              <p class="condition-desc">Degenerative joint disease resulting in wear of articular cartilage, causing friction and skeletal friction pains.</p>
+              <a href="services.html#joint-replacement" class="service-link">View Care <i data-lucide="arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- ACL Tear -->
+          <div class="condition-card-wrapper" data-name="ACL Tear" data-parts="knee">
+            <div class="glass-card condition-card layer-bg">
+              <div class="floating-icon-wrapper"><i data-lucide="zap"></i></div>
+              <h3 class="condition-title">ACL Tear</h3>
+              <p class="condition-desc">Rupture of the anterior cruciate ligament in the knee, leading to joint giving-way during twist motions.</p>
+              <a href="services.html#sports-medicine" class="service-link">View Care <i data-lucide="arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Carpal Tunnel -->
+          <div class="condition-card-wrapper" data-name="Carpal Tunnel Syndrome" data-parts="hand">
+            <div class="glass-card condition-card layer-bg">
+              <div class="floating-icon-wrapper"><i data-lucide="user"></i></div>
+              <h3 class="condition-title">Carpal Tunnel</h3>
+              <p class="condition-desc">Compression of the median nerve in the wrist compartment, leading to tingling, numbness, and grip stiffness.</p>
+              <a href="services.html#hand-wrist" class="service-link">View Care <i data-lucide="arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Herniated Disc -->
+          <div class="condition-card-wrapper" data-name="Herniated Disc" data-parts="spine">
+            <div class="glass-card condition-card layer-bg">
+              <div class="floating-icon-wrapper"><i data-lucide="chevron-down"></i></div>
+              <h3 class="condition-title">Herniated Disc</h3>
+              <p class="condition-desc">Displacement of spinal cushion material that pinches local spinal nerves, triggering leg sciatica and spine pains.</p>
+              <a href="services.html#spine-surgery" class="service-link">View Care <i data-lucide="arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Rotator Cuff Tear -->
+          <div class="condition-card-wrapper" data-name="Rotator Cuff Tear" data-parts="shoulder">
+            <div class="glass-card condition-card layer-bg">
+              <div class="floating-icon-wrapper"><i data-lucide="zap"></i></div>
+              <h3 class="condition-title">Rotator Cuff Tear</h3>
+              <p class="condition-desc">Fraying or rupture of shoulder muscle tendons, causing severe discomfort during overhead reaching movements.</p>
+              <a href="services.html#sports-medicine" class="service-link">View Care <i data-lucide="arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Plantar Fasciitis -->
+          <div class="condition-card-wrapper" data-name="Plantar Fasciitis" data-parts="foot">
+            <div class="glass-card condition-card layer-bg">
+              <div class="floating-icon-wrapper"><i data-lucide="activity"></i></div>
+              <h3 class="condition-title">Plantar Fasciitis</h3>
+              <p class="condition-desc">Inflammation of the fibrous ligament banding along the foot sole, triggering acute heel discomfort upon morning steps.</p>
+              <a href="services.html#sports-medicine" class="service-link">View Care <i data-lucide="arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Downloadable Guides Section -->
+    <section class="section-padding" style="background: rgba(224, 242, 254, 0.25);">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tag">PATIENT GUIDELINES</span>
+          <h2 class="section-title">Clinical Recovery Manuals</h2>
+          <p>Download our verified pre-operative and post-operative home management brochures compiled by leading specialists.</p>
+        </div>
+
+        <div class="grid-3 scroll-reveal">
+          <!-- Guide 1 -->
+          <div class="glass-card download-card layer-bg">
+            <div class="download-icon">
+              <i data-lucide="file-text"></i>
+            </div>
+            <div class="download-info">
+              <div class="download-title">Knee Rehab Protocol</div>
+              <div class="download-desc">PDF • 1.4 MB • Weeks 1-6 Plan</div>
+            </div>
+            <button class="download-btn download-card-btn" aria-label="Download Knee Rehabilitation Protocol Guide">
+              <i data-lucide="download"></i>
+            </button>
+            <div class="download-progress"></div>
+          </div>
+          <!-- Guide 2 -->
+          <div class="glass-card download-card layer-bg">
+            <div class="download-icon" style="background:var(--teal-ultra-light); border-color:var(--teal-glow); color:var(--teal-mid);">
+              <i data-lucide="file-text"></i>
+            </div>
+            <div class="download-info">
+              <div class="download-title">Joint Pre-Op Guidelines</div>
+              <div class="download-desc">PDF • 800 KB • Checklist Booklet</div>
+            </div>
+            <button class="download-btn download-card-btn" aria-label="Download Joint Pre-Operative Preparation Checklist Guide">
+              <i data-lucide="download"></i>
+            </button>
+            <div class="download-progress"></div>
+          </div>
+          <!-- Guide 3 -->
+          <div class="glass-card download-card layer-bg">
+            <div class="download-icon">
+              <i data-lucide="file-text"></i>
+            </div>
+            <div class="download-info">
+              <div class="download-title">Spine Health Manual</div>
+              <div class="download-desc">PDF • 2.1 MB • Posture Best Practices</div>
+            </div>
+            <button class="download-btn download-card-btn" aria-label="Download Spinal Health and Posture Best Practices Guide">
+              <i data-lucide="download"></i>
+            </button>
+            <div class="download-progress"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accordion FAQ section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tag">FAQ CLINIC BOARD</span>
+          <h2 class="section-title">Patient Administration FAQ</h2>
+          <p>Read about appointment guidelines, cancelations, diagnostic scan orders, and post-surgery logistics.</p>
+        </div>
+
+        <div class="service-faq-container scroll-reveal">
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How do I request copies of my medical imaging?</span>
+              <i data-lucide="chevron-down" class="accordion-icon"></i>
+            </button>
+            <div class="accordion-collapse">
+              <div class="accordion-body">
+                You can request your MRI or CT scan records on CD or secure digital link by filling out our HIPAA Medical Release Form. Please call the records administrator desk at least 48 hours prior to your external second-opinion appointment.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>What is your surgical scheduling cancelation guideline?</span>
+              <i data-lucide="chevron-down" class="accordion-icon"></i>
+            </button>
+            <div class="accordion-collapse">
+              <div class="accordion-body">
+                We require at least 5 business days notice for elective surgical rescheduling or cancelations. This allows our surgical coordinators to coordinate cleanroom suites and adjust medical device technician calendar scheduling slots.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Will I need to stay overnight following a joint replacement?</span>
+              <i data-lucide="chevron-down" class="accordion-icon"></i>
+            </button>
+            <div class="accordion-collapse">
+              <div class="accordion-body">
+                Over 70% of robotic-assisted hip and knee replacement procedures at Aura are performed as outpatient surgeries, allowing clients to return to their luxury hotel or home environment the same evening. Overnight clinical stays are only ordered for patients with compound cardiac or pulmonary risk factors.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">
+          <i data-lucide="activity"></i>
+          <span>AURA ORTHOPEDICS</span>
+        </a>
+        <p class="footer-desc">Premium skeletal health and movement restoration. Restoring vitality, strength, and life coordinates to active individuals.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Facebook"><i data-lucide="star"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter"><i data-lucide="activity"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i data-lucide="shield"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Lead Physicians</a></li>
+          <li><a href="conditions.html">Patient Guides</a></li>
+          <li><a href="about.html">Our Clinic</a></li>
+          <li><a href="contact.html">Book Appointment</a></li>
+          <li><a href="blog.html">Health Insights</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#sports">Sports Medicine</a></li>
+          <li><a href="services.html#joint">Joint Replacement</a></li>
+          <li><a href="services.html#spine">Spine Care</a></li>
+          <li><a href="services.html#pediatric">Pediatric Ortho</a></li>
+          <li><a href="services.html#hand">Hand & Wrist</a></li>
+          <li><a href="services.html#trauma">Trauma Surgery</a></li>
+          <li><a href="services.html#foot-ankle">Foot & Ankle</a></li>
+          <li><a href="services.html#shoulder-elbow">Shoulder & Elbow</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Contact Us</h4>
+        <div class="footer-contact-info">
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin"></i>
+            <p>Aura Surgical Plaza, Suite 400<br>9020 Beverly Hills Blvd, CA 90210</p>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="phone"></i>
+            <p>+1 (800) 555-AURA<br>Mon - Fri: 8:00 AM - 6:00 PM</p>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="mail"></i>
+            <p>concierge@auraclinic.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Aura Orthopedic Clinic. All rights reserved. | <a href="#" style="color:var(--text-muted); text-decoration:none;">Privacy Policy</a> | <a href="#" style="color:var(--text-muted); text-decoration:none;">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <!-- Live Chat Widget -->
+  <div class="chat-widget" id="chat-widget">
+    <div class="chat-bubble" id="chat-bubble" aria-label="Open chat assistant">
+      <i data-lucide="message-square"></i>
+    </div>
+    
+    <div class="glass-card chat-panel layer-fg" id="chat-panel">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-status-dot"></div>
+          <span class="chat-header-title">Aura Concierge Desk</span>
+        </div>
+        <button class="chat-close-btn" id="chat-close" aria-label="Close Chat">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      
+      <div class="chat-messages" id="chat-messages">
+        <div class="chat-msg bot">
+          Welcome to Aura Orthopedics. I am your concierge assistant. How can I help guide your recovery today?
+        </div>
+      </div>
+      
+      <form class="chat-input-area" id="chat-form">
+        <input type="text" class="glass-input" id="chat-input" placeholder="Type a message..." required>
+        <button type="submit" class="chat-send-btn" aria-label="Send Message">
+          <i data-lucide="send"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Local Script for Accordion Toggles -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const accordionHeaders = document.querySelectorAll('.accordion-header');
+      
+      accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+          const item = header.closest('.accordion-item');
+          const isOpened = item.classList.contains('active');
+          
+          // Close all open items
+          const allItems = document.querySelectorAll('.accordion-item');
+          allItems.forEach(i => {
+            i.classList.remove('active');
+            const collapse = i.querySelector('.accordion-collapse');
+            if (collapse) collapse.style.maxHeight = null;
+          });
+          
+          if (!isOpened) {
+            item.classList.add('active');
+            const collapse = item.querySelector('.accordion-collapse');
+            if (collapse) {
+              collapse.style.maxHeight = collapse.scrollHeight + 'px';
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

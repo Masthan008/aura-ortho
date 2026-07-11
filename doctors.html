@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Medical Team | Aura Orthopedic Specialists</title>
+  <meta name="description" content="Meet Aura Clinic's leading orthopedic surgeons and specialists. Filter by specialty and check credentials, clinical research backgrounds, and education.">
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- Custom Page Loader -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-spinner">
+      <div class="loader-inner">
+        <span class="loader-logo">AURA</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Morphing Gradients -->
+  <div class="bg-mesh-container">
+    <div class="bg-blob blob-teal"></div>
+    <div class="bg-blob blob-blue"></div>
+    <div class="bg-blob blob-green"></div>
+  </div>
+
+  <!-- Sticky Glass Navbar -->
+  <header class="navbar layer-mid">
+    <a href="index.html" class="nav-brand">
+      <i data-lucide="activity"></i>
+      <span>AURA ORTHO</span>
+    </a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="doctors.html" class="nav-link active">Doctors</a></li>
+        <li><a href="conditions.html" class="nav-link">Conditions</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="nav-cta-btn">Book Now</a>
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+      <i data-lucide="menu"></i>
+    </button>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <div class="mobile-menu-container">
+      <button class="doctor-modal-close" id="mobile-menu-close" aria-label="Close Menu">
+        <i data-lucide="x"></i>
+      </button>
+      <ul class="mobile-menu-list">
+        <li><a href="index.html" class="mobile-menu-link">Home</a></li>
+        <li><a href="services.html" class="mobile-menu-link">Services</a></li>
+        <li><a href="doctors.html" class="mobile-menu-link">Doctors</a></li>
+        <li><a href="conditions.html" class="mobile-menu-link">Conditions</a></li>
+        <li><a href="about.html" class="mobile-menu-link">About</a></li>
+        <li><a href="blog.html" class="mobile-menu-link">Blog</a></li>
+        <li><a href="contact.html" class="mobile-menu-link" style="color:var(--teal-mid);">Book Appointment</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Sub Hero Header -->
+  <section class="page-hero">
+    <div class="container scroll-reveal">
+      <span class="section-tag">CLINICAL AUTHORITY</span>
+      <h1 class="page-hero-title text-gradient glass-typography">Orthopedic Scholars & Clinicians</h1>
+      <p class="page-hero-subtitle">Our surgeons are fellowship-trained, hold academic seats, and participate in peer-reviewed clinical research to advance orthopedic care.</p>
+    </div>
+  </section>
+
+  <main id="main-content">
+
+    <!-- Filters and Grid -->
+    <section class="section-padding" style="padding-top:20px;">
+      <div class="container">
+        
+        <!-- Specialty Filters -->
+        <div class="filter-tabs scroll-reveal">
+          <button class="filter-btn doctor-filter-btn active" data-filter="all">All Surgeons</button>
+          <button class="filter-btn doctor-filter-btn" data-filter="sports-medicine">Sports Medicine</button>
+          <button class="filter-btn doctor-filter-btn" data-filter="joint-replacement">Joint Replacement</button>
+          <button class="filter-btn doctor-filter-btn" data-filter="spine-surgery">Spine Surgery</button>
+          <button class="filter-btn doctor-filter-btn" data-filter="hand-wrist">Hand & Wrist</button>
+          <button class="filter-btn doctor-filter-btn" data-filter="pediatric">Pediatric Ortho</button>
+          <button class="filter-btn doctor-filter-btn" data-filter="foot-ankle">Foot & Ankle</button>
+          <button class="filter-btn doctor-filter-btn" data-filter="shoulder-elbow">Shoulder & Elbow</button>
+        </div>
+
+        <!-- Doctor cards grid -->
+        <div class="grid-2-3 scroll-reveal" id="doctors-grid">
+          
+          <!-- Dr. Sarah Jenkins -->
+          <div class="doctor-card-wrapper" data-specialty="sports-medicine">
+            <div class="glass-card doctor-card doctor-card-trigger layer-bg"
+                 data-name="Dr. Sarah Jenkins, MD"
+                 data-spec="Sports Medicine Specialist"
+                 data-img="/src/assets/doctors.png"
+                 data-bio="Dr. Sarah Jenkins is a board-certified sports medicine physician specializing in shoulder, knee, and hip reconstructive arthroscopy. She spent eight years as a consulting physician for Olympic athletic programs, focusing on ligament preservation and rapid return-to-sport protocols."
+                 data-edu="MD - Harvard Medical School;Residency in Orthopedic Surgery - Massachusetts General Hospital;Sports Medicine Fellowship - Hospital for Special Surgery (HSS), New York"
+                 data-certs="Board-Certified in Orthopedic Surgery (ABOS);Member of AOSSM (American Orthopaedic Society for Sports Medicine);Research Director at Aura Sports Lab">
+              <div class="doctor-avatar-container">
+                <img src="/src/assets/doctors.png" alt="Dr. Sarah Jenkins, MD" class="doctor-avatar">
+              </div>
+              <h3 class="doctor-name">Dr. Sarah Jenkins</h3>
+              <div class="doctor-spec">Sports Medicine</div>
+              <div class="doctor-experience">15+ Years Clinical Practice</div>
+              <div class="doctor-pills">
+                <span class="doctor-pill">Harvard</span>
+                <span class="doctor-pill">Fellowship-Trained</span>
+                <span class="doctor-pill">AOSSM</span>
+              </div>
+              <button class="liquid-btn" style="padding:10px 20px; font-size:0.8rem;">View Bio & Credentials</button>
+            </div>
+          </div>
+
+          <!-- Dr. Arthur Pendelton -->
+          <div class="doctor-card-wrapper" data-specialty="spine-surgery">
+            <div class="glass-card doctor-card doctor-card-trigger layer-bg"
+                 data-name="Dr. Arthur Pendelton, MD"
+                 data-spec="Spine Surgery Specialist"
+                 data-img="/src/assets/doctors.png"
+                 data-bio="Dr. Arthur Pendelton is a leader in minimally invasive spinal decompression and reconstructive surgeries. He specializes in motion-preservation technologies, artificial disc replacements, and corrective procedures for complex degenerative spinal deformities."
+                 data-edu="MD - Johns Hopkins School of Medicine;Orthopedic Residency - University of California, San Francisco;Spinal Surgery Fellowship - Cleveland Clinic Foundation"
+                 data-certs="Board-Certified in Orthopedic Spine Surgery;Active Member of North American Spine Society (NASS);Recipient of Spine Pioneer Research Award (2022)">
+              <div class="doctor-avatar-container">
+                <img src="/src/assets/doctors.png" alt="Dr. Arthur Pendelton, MD" class="doctor-avatar">
+              </div>
+              <h3 class="doctor-name">Dr. Arthur Pendelton</h3>
+              <div class="doctor-spec">Spine Surgery</div>
+              <div class="doctor-experience">18+ Years Clinical Practice</div>
+              <div class="doctor-pills">
+                <span class="doctor-pill">Johns Hopkins</span>
+                <span class="doctor-pill">Minimally Invasive</span>
+                <span class="doctor-pill">NASS</span>
+              </div>
+              <button class="liquid-btn" style="padding:10px 20px; font-size:0.8rem;">View Bio & Credentials</button>
+            </div>
+          </div>
+
+          <!-- Dr. Robert Chen -->
+          <div class="doctor-card-wrapper" data-specialty="joint-replacement">
+            <div class="glass-card doctor-card doctor-card-trigger layer-bg"
+                 data-name="Dr. Robert Chen, MD"
+                 data-spec="Chief of Joint Reconstruction"
+                 data-img="/src/assets/doctors.png"
+                 data-bio="Dr. Robert Chen founded Aura Clinic to build a clinical environment dedicated to precise joint preservation. He has performed over 6,000 robotic hip and knee procedures and acts as a consultant designer for computed tomography surgical alignment software."
+                 data-edu="MD - Stanford University School of Medicine;Orthopedic Surgery Residency - Mayo Clinic;Joint Preservation & Reconstruction Fellowship - Rush University Medical Center"
+                 data-certs="Board-Certified in Joint Reconstruction Surgery;Chief Surgical Officer at Aura;Fellow of AAOS (American Academy of Orthopaedic Surgeons)">
+              <div class="doctor-avatar-container">
+                <img src="/src/assets/doctors.png" alt="Dr. Robert Chen, MD" class="doctor-avatar">
+              </div>
+              <h3 class="doctor-name">Dr. Robert Chen</h3>
+              <div class="doctor-spec">Joint Replacement</div>
+              <div class="doctor-experience">24+ Years Clinical Practice</div>
+              <div class="doctor-pills">
+                <span class="doctor-pill">Stanford</span>
+                <span class="doctor-pill">Robotic Specialist</span>
+                <span class="doctor-pill">AAOS Chief</span>
+              </div>
+              <button class="liquid-btn" style="padding:10px 20px; font-size:0.8rem;">View Bio & Credentials</button>
+            </div>
+          </div>
+
+          <!-- Dr. Maya Lin -->
+          <div class="doctor-card-wrapper" data-specialty="hand-wrist">
+            <div class="glass-card doctor-card doctor-card-trigger layer-bg"
+                 data-name="Dr. Maya Lin, MD"
+                 data-spec="Hand & Wrist Surgeon"
+                 data-img="/src/assets/doctors.png"
+                 data-bio="Dr. Maya Lin is a microvascular surgeon specializing in reconstructive procedures for complex wrist injuries, nerve entrapments, rheumatoid hand conditions, and sports-related tendon ruptures of the fingers and thumb."
+                 data-edu="MD - Yale School of Medicine;Residency - New York Presbyterian Hospital;Hand and Upper Extremity Fellowship - Mayo Clinic, Rochester"
+                 data-certs="Board-Certified in Hand Surgery (ABOS Certificate of Added Qualifications);Active Member of ASSH (American Society for Surgery of the Hand)">
+              <div class="doctor-avatar-container">
+                <img src="/src/assets/doctors.png" alt="Dr. Maya Lin, MD" class="doctor-avatar">
+              </div>
+              <h3 class="doctor-name">Dr. Maya Lin</h3>
+              <div class="doctor-spec">Hand & Wrist</div>
+              <div class="doctor-experience">12+ Years Clinical Practice</div>
+              <div class="doctor-pills">
+                <span class="doctor-pill">Yale Medical</span>
+                <span class="doctor-pill">Microvascular</span>
+                <span class="doctor-pill">ASSH Member</span>
+              </div>
+              <button class="liquid-btn" style="padding:10px 20px; font-size:0.8rem;">View Bio & Credentials</button>
+            </div>
+          </div>
+
+          <!-- Dr. Elena Rostova -->
+          <div class="doctor-card-wrapper" data-specialty="pediatric">
+            <div class="glass-card doctor-card doctor-card-trigger layer-bg"
+                 data-name="Dr. Elena Rostova, MD"
+                 data-spec="Pediatric Orthopedist"
+                 data-img="/src/assets/doctors.png"
+                 data-bio="Dr. Elena Rostova specializes in pediatric bone growth analysis, treating clubfoot, developmental dysplasias, and childhood spinal curvatures. She holds a patent for a growth-plate compliant stabilization screw system."
+                 data-edu="MD - Columbia University Vagelos College of Physicians and Surgeons;Pediatric Residency - Children's Hospital Philadelphia (CHOP);Pediatric Orthopedic Fellowship - Boston Children's Hospital"
+                 data-certs="Board-Certified Pediatric Orthopedics Specialist;Member of POSNA (Pediatric Orthopaedic Society of North America)">
+              <div class="doctor-avatar-container">
+                <img src="/src/assets/doctors.png" alt="Dr. Elena Rostova, MD" class="doctor-avatar">
+              </div>
+              <h3 class="doctor-name">Dr. Elena Rostova</h3>
+              <div class="doctor-spec">Pediatric Ortho</div>
+              <div class="doctor-experience">14+ Years Clinical Practice</div>
+              <div class="doctor-pills">
+                <span class="doctor-pill">Columbia</span>
+                <span class="doctor-pill">Pediatric Scholar</span>
+                <span class="doctor-pill">POSNA</span>
+              </div>
+              <button class="liquid-btn" style="padding:10px 20px; font-size:0.8rem;">View Bio & Credentials</button>
+            </div>
+          </div>
+
+          <!-- Dr. Marcus Vance -->
+          <div class="doctor-card-wrapper" data-specialty="foot-ankle">
+            <div class="glass-card doctor-card doctor-card-trigger layer-bg"
+                 data-name="Dr. Marcus Vance, MD"
+                 data-spec="Foot & Ankle Specialist"
+                 data-img="/src/assets/doctors.png"
+                 data-bio="Dr. Marcus Vance is a board-certified reconstructive surgeon specializing in total ankle replacement, flatfoot repair, bunion alignments, and complex Achilles tendon repair."
+                 data-edu="MD - Duke University School of Medicine;Residency in Orthopedics - UCLA Medical Center;Foot & Ankle Surgery Fellowship - Orthopaedic Foot & Ankle Center"
+                 data-certs="Board-Certified in Orthopedic Surgery;Active Member of AOFAS (American Orthopaedic Foot & Ankle Society)">
+              <div class="doctor-avatar-container">
+                <img src="/src/assets/doctors.png" alt="Dr. Marcus Vance, MD" class="doctor-avatar">
+              </div>
+              <h3 class="doctor-name">Dr. Marcus Vance</h3>
+              <div class="doctor-spec">Foot & Ankle</div>
+              <div class="doctor-experience">16+ Years Clinical Practice</div>
+              <div class="doctor-pills">
+                <span class="doctor-pill">Duke Med</span>
+                <span class="doctor-pill">Reconstructive</span>
+                <span class="doctor-pill">AOFAS</span>
+              </div>
+              <button class="liquid-btn" style="padding:10px 20px; font-size:0.8rem;">View Bio & Credentials</button>
+            </div>
+          </div>
+
+          <!-- Dr. Thomas Kelly -->
+          <div class="doctor-card-wrapper" data-specialty="shoulder-elbow">
+            <div class="glass-card doctor-card doctor-card-trigger layer-bg"
+                 data-name="Dr. Thomas Kelly, MD"
+                 data-spec="Shoulder & Elbow Surgeon"
+                 data-img="/src/assets/doctors.png"
+                 data-bio="Dr. Thomas Kelly is a fellowship-trained expert in shoulder arthroplasty, complex rotator cuff reconstructions, elbow stiffness corrections, and sports shoulder instability repairs."
+                 data-edu="MD - University of Pennsylvania Perelman School of Medicine;Orthopedic Residency - Cleveland Clinic;Shoulder & Elbow Surgery Fellowship - Columbia University"
+                 data-certs="Board-Certified in Orthopedic Shoulder Surgery;Active Member of ASES (American Shoulder and Elbow Surgeons)">
+              <div class="doctor-avatar-container">
+                <img src="/src/assets/doctors.png" alt="Dr. Thomas Kelly, MD" class="doctor-avatar">
+              </div>
+              <h3 class="doctor-name">Dr. Thomas Kelly</h3>
+              <div class="doctor-spec">Shoulder & Elbow</div>
+              <div class="doctor-experience">17+ Years Clinical Practice</div>
+              <div class="doctor-pills">
+                <span class="doctor-pill">UPenn</span>
+                <span class="doctor-pill">Rotator Cuff</span>
+                <span class="doctor-pill">ASES Member</span>
+              </div>
+              <button class="liquid-btn" style="padding:10px 20px; font-size:0.8rem;">View Bio & Credentials</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Fullscreen Doctor Profile Modal -->
+  <div class="doctor-modal" id="doctor-modal">
+    <div class="doctor-modal-content">
+      <button class="doctor-modal-close" id="doctor-modal-close" aria-label="Close Profile">
+        <i data-lucide="x"></i>
+      </button>
+      
+      <div class="doctor-modal-grid">
+        <div class="doctor-modal-left">
+          <img src="" alt="" class="doctor-modal-avatar" id="modal-img">
+          <h2 class="doctor-name" style="font-size:1.6rem;" id="modal-name"></h2>
+          <div class="doctor-spec" style="font-size:0.95rem; margin-bottom:20px;" id="modal-spec"></div>
+          
+          <a href="contact.html" class="liquid-btn liquid-btn-accent" style="width:100%;">
+            <span>Schedule Appointment</span>
+          </a>
+        </div>
+        
+        <div class="doctor-modal-right">
+          <h3 class="modal-section-title">Clinical Biography</h3>
+          <p id="modal-bio"></p>
+          
+          <h3 class="modal-section-title">Education & Academic History</h3>
+          <ul class="doctor-modal-list" id="modal-education">
+            <!-- Loaded dynamically -->
+          </ul>
+          
+          <h3 class="modal-section-title">Board Certifications & Memberships</h3>
+          <ul class="doctor-modal-list" id="modal-certs">
+            <!-- Loaded dynamically -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">
+          <i data-lucide="activity"></i>
+          <span>AURA ORTHOPEDICS</span>
+        </a>
+        <p class="footer-desc">Premium skeletal health and movement restoration. Restoring vitality, strength, and life coordinates to active individuals.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Facebook"><i data-lucide="star"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter"><i data-lucide="activity"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i data-lucide="shield"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Lead Physicians</a></li>
+          <li><a href="conditions.html">Patient Guides</a></li>
+          <li><a href="about.html">Our Clinic</a></li>
+          <li><a href="contact.html">Book Appointment</a></li>
+          <li><a href="blog.html">Health Insights</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#sports">Sports Medicine</a></li>
+          <li><a href="services.html#joint">Joint Replacement</a></li>
+          <li><a href="services.html#spine">Spine Care</a></li>
+          <li><a href="services.html#pediatric">Pediatric Ortho</a></li>
+          <li><a href="services.html#hand">Hand & Wrist</a></li>
+          <li><a href="services.html#trauma">Trauma Surgery</a></li>
+          <li><a href="services.html#foot-ankle">Foot & Ankle</a></li>
+          <li><a href="services.html#shoulder-elbow">Shoulder & Elbow</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Contact Us</h4>
+        <div class="footer-contact-info">
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin"></i>
+            <p>Aura Surgical Plaza, Suite 400<br>9020 Beverly Hills Blvd, CA 90210</p>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="phone"></i>
+            <p>+1 (800) 555-AURA<br>Mon - Fri: 8:00 AM - 6:00 PM</p>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="mail"></i>
+            <p>concierge@auraclinic.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Aura Orthopedic Clinic. All rights reserved. | <a href="#" style="color:var(--text-muted); text-decoration:none;">Privacy Policy</a> | <a href="#" style="color:var(--text-muted); text-decoration:none;">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <!-- Live Chat Widget -->
+  <div class="chat-widget" id="chat-widget">
+    <div class="chat-bubble" id="chat-bubble" aria-label="Open chat assistant">
+      <i data-lucide="message-square"></i>
+    </div>
+    
+    <div class="glass-card chat-panel layer-fg" id="chat-panel">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-status-dot"></div>
+          <span class="chat-header-title">Aura Concierge Desk</span>
+        </div>
+        <button class="chat-close-btn" id="chat-close" aria-label="Close Chat">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      
+      <div class="chat-messages" id="chat-messages">
+        <div class="chat-msg bot">
+          Welcome to Aura Orthopedics. I am your concierge assistant. How can I help guide your recovery today?
+        </div>
+      </div>
+      
+      <form class="chat-input-area" id="chat-form">
+        <input type="text" class="glass-input" id="chat-input" placeholder="Type a message..." required>
+        <button type="submit" class="chat-send-btn" aria-label="Send Message">
+          <i data-lucide="send"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/filters.js"></script>
+</body>
+</html>

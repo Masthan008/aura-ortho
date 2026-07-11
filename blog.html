@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orthopedic Research & Wellness Insights | Aura Blog</title>
+  <meta name="description" content="Read clinical insights from Aura's surgeons about injury prevention, joint longevity, spine ergonomics, and advanced medical news.">
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- Custom Page Loader -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-spinner">
+      <div class="loader-inner">
+        <span class="loader-logo">AURA</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Morphing Gradients -->
+  <div class="bg-mesh-container">
+    <div class="bg-blob blob-teal"></div>
+    <div class="bg-blob blob-blue"></div>
+    <div class="bg-blob blob-green"></div>
+  </div>
+
+  <!-- Sticky Glass Navbar -->
+  <header class="navbar layer-mid">
+    <a href="index.html" class="nav-brand">
+      <i data-lucide="activity"></i>
+      <span>AURA ORTHO</span>
+    </a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+        <li><a href="conditions.html" class="nav-link">Conditions</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="blog.html" class="nav-link active">Blog</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="nav-cta-btn">Book Now</a>
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+      <i data-lucide="menu"></i>
+    </button>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <div class="mobile-menu-container">
+      <button class="doctor-modal-close" id="mobile-menu-close" aria-label="Close Menu">
+        <i data-lucide="x"></i>
+      </button>
+      <ul class="mobile-menu-list">
+        <li><a href="index.html" class="mobile-menu-link">Home</a></li>
+        <li><a href="services.html" class="mobile-menu-link">Services</a></li>
+        <li><a href="doctors.html" class="mobile-menu-link">Doctors</a></li>
+        <li><a href="conditions.html" class="mobile-menu-link">Conditions</a></li>
+        <li><a href="about.html" class="mobile-menu-link">About</a></li>
+        <li><a href="blog.html" class="mobile-menu-link">Blog</a></li>
+        <li><a href="contact.html" class="mobile-menu-link" style="color:var(--teal-mid);">Book Appointment</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Sub Hero Header -->
+  <section class="page-hero">
+    <div class="container scroll-reveal">
+      <span class="section-tag">HEALTH INSIGHTS</span>
+      <h1 class="page-hero-title text-gradient glass-typography">Orthopedic Research & Wellness Insights</h1>
+      <p class="page-hero-subtitle">Read peer-reviewed clinical articles, ergonomics advice, and training guides authored directly by our surgeons.</p>
+    </div>
+  </section>
+
+  <main id="main-content">
+
+    <!-- Featured Post -->
+    <section class="section-padding" style="padding-top:0;">
+      <div class="container">
+        
+        <div class="glass-card featured-blog-card layer-fg scroll-reveal">
+          <img src="/src/assets/clinic.png" alt="Doctor demonstrating knee joint anatomy wireframe render" class="featured-blog-img">
+          <div>
+            <span class="blog-cat-tag">Technology</span>
+            <h2 style="font-size:1.8rem; font-weight:700; margin-bottom:12px; line-height:1.2;">The Future of Joint Arthroplasty: Robotic-Assisted Reconstructions</h2>
+            <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:20px;">Understand the mechanics behind real-time computed tomography calculations that allow orthopedic surgeons to adjust joint implants with sub-millimeter precision, leading to faster walking recoveries.</p>
+            
+            <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid rgba(255,255,255,0.2); padding-top:16px;">
+              <span style="font-size:0.8rem; font-weight:600; color:var(--text-muted);">Published July 2026 • 8 Min Read</span>
+              <a href="services.html#joint-replacement" class="service-link">Read Full <i data-lucide="arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Filters and Grid -->
+    <section class="section-padding" style="padding-top:20px;">
+      <div class="container">
+        
+        <!-- Category Filter Pills -->
+        <div class="filter-tabs scroll-reveal">
+          <button class="filter-btn blog-filter-btn active" data-filter="all">All Articles</button>
+          <button class="filter-btn blog-filter-btn" data-filter="prevention">Injury Prevention</button>
+          <button class="filter-btn blog-filter-btn" data-filter="recovery">Recovery</button>
+          <button class="filter-btn blog-filter-btn" data-filter="technology">Technology</button>
+          <button class="filter-btn blog-filter-btn" data-filter="wellness">Wellness</button>
+        </div>
+
+        <!-- Article Grid -->
+        <div class="grid-2-3 scroll-reveal" id="blog-grid" style="margin-top:40px;">
+          
+          <!-- Card 1 -->
+          <div class="blog-item-wrapper" data-category="prevention">
+            <div class="glass-card blog-card layer-bg">
+              <img src="/src/assets/clinic.png" alt="Athlete warming up on running track" class="blog-card-img">
+              <div class="blog-card-body">
+                <span class="blog-cat-tag">Injury Prevention</span>
+                <h3 class="blog-card-title">Preventing ACL Tears: Core Conditioning for High-Impact Sports</h3>
+                <p class="service-desc">Integrate specific hamstring stabilization drills and hip alignment training into your fitness routine to shield knee ligaments.</p>
+                <div class="blog-card-meta">
+                  <span>July 2026</span>
+                  <span>5 Min Read</span>
+                </div>
+                <a href="conditions.html" class="service-link">Read Article <i data-lucide="chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="blog-item-wrapper" data-category="technology">
+            <div class="glass-card blog-card layer-bg">
+              <img src="/src/assets/hero-joint.png" alt="Joint structure wireframe mesh model visualization" class="blog-card-img">
+              <div class="blog-card-body">
+                <span class="blog-cat-tag">Technology</span>
+                <h3 class="blog-card-title">Micro-Endoscopic Discectomy: Minimally Invasive Spine Advancements</h3>
+                <p class="service-desc">How tiny tube dilatations and 4K fiber optic feeds allow spine surgeons to relieve herniations without splitting back muscle fibers.</p>
+                <div class="blog-card-meta">
+                  <span>June 2026</span>
+                  <span>6 Min Read</span>
+                </div>
+                <a href="conditions.html" class="service-link">Read Article <i data-lucide="chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="blog-item-wrapper" data-category="recovery">
+            <div class="glass-card blog-card layer-bg">
+              <img src="/src/assets/doctors.png" alt="Surgeons pointing at MRI scans" class="blog-card-img">
+              <div class="blog-card-body">
+                <span class="blog-cat-tag">Recovery</span>
+                <h3 class="blog-card-title">Ergonomic Office Postures: Shielding Your Lumbar Spine</h3>
+                <p class="service-desc">A neurosurgeon's guide to lumbar chair support setup, desk heights, and screen positioning to prevent spinal stenosis.</p>
+                <div class="blog-card-meta">
+                  <span>June 2026</span>
+                  <span>4 Min Read</span>
+                </div>
+                <a href="conditions.html" class="service-link">Read Article <i data-lucide="chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="blog-item-wrapper" data-category="wellness">
+            <div class="glass-card blog-card layer-bg">
+              <img src="/src/assets/clinic.png" alt="Patient undergoing physical therapy stretches" class="blog-card-img">
+              <div class="blog-card-body">
+                <span class="blog-cat-tag">Wellness</span>
+                <h3 class="blog-card-title">Anti-Inflammatory Nutrition for Osteoarthritis Control</h3>
+                <p class="service-desc">Add omega-rich fats, greens, and antioxidant compounds to your diet to naturally reduce synovial joint inflammation and swelling.</p>
+                <div class="blog-card-meta">
+                  <span>May 2026</span>
+                  <span>7 Min Read</span>
+                </div>
+                <a href="conditions.html" class="service-link">Read Article <i data-lucide="chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="blog-item-wrapper" data-category="recovery">
+            <div class="glass-card blog-card layer-bg">
+              <img src="/src/assets/clinic.png" alt="Rehabilitation center weights and steps" class="blog-card-img">
+              <div class="blog-card-body">
+                <span class="blog-cat-tag">Recovery</span>
+                <h3 class="blog-card-title">Home Rehab Exercises Following Rotator Cuff Repair</h3>
+                <p class="service-desc">Brochure outlines safe range-of-motion stretches, wall climbs, and band routines for weeks 4 through 8 post-op recovery.</p>
+                <div class="blog-card-meta">
+                  <span>April 2026</span>
+                  <span>5 Min Read</span>
+                </div>
+                <a href="conditions.html" class="service-link">Read Article <i data-lucide="chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="blog-item-wrapper" data-category="technology">
+            <div class="glass-card blog-card layer-bg">
+              <img src="/src/assets/hero-joint.png" alt="3d skeletal rendering orthopedics tool" class="blog-card-img">
+              <div class="blog-card-body">
+                <span class="blog-cat-tag">Technology</span>
+                <h3 class="blog-card-title">Understanding High-Field 3T MRI Scanning Diagnostics</h3>
+                <p class="service-desc">Why doubling magnetic force density lets doctors map micro-cartilage tears and diagnose subtle tendon damage before operations.</p>
+                <div class="blog-card-meta">
+                  <span>April 2026</span>
+                  <span>5 Min Read</span>
+                </div>
+                <a href="conditions.html" class="service-link">Read Article <i data-lucide="chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Newsletter inline glass strip -->
+    <section class="section-padding" style="background: rgba(224, 242, 254, 0.25);">
+      <div class="container">
+        
+        <div class="glass-card layer-fg" style="max-width:850px; margin:0 auto; padding:40px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px;">
+          <div style="flex-grow:1; max-width:420px;">
+            <h3 style="font-size:1.4rem; font-weight:700; margin-bottom:8px;">Subscribe to Clinical Insights</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:0;">Receive monthly medical briefs and orthopedic conditioning guides directly to your inbox.</p>
+          </div>
+          
+          <form style="display:flex; gap:12px; width:100%; max-width:380px;" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Aura Insights!'); this.reset();">
+            <input type="email" class="glass-input" placeholder="Enter your email address" required style="border-radius:30px;">
+            <button type="submit" class="liquid-btn liquid-btn-accent" style="height:52px; white-space:nowrap; border:none; padding: 0 28px;">
+              <span>Subscribe</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">
+          <i data-lucide="activity"></i>
+          <span>AURA ORTHOPEDICS</span>
+        </a>
+        <p class="footer-desc">Premium skeletal health and movement restoration. Restoring vitality, strength, and life coordinates to active individuals.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Facebook"><i data-lucide="star"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter"><i data-lucide="activity"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i data-lucide="shield"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Lead Physicians</a></li>
+          <li><a href="conditions.html">Patient Guides</a></li>
+          <li><a href="about.html">Our Clinic</a></li>
+          <li><a href="contact.html">Book Appointment</a></li>
+          <li><a href="blog.html">Health Insights</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#sports">Sports Medicine</a></li>
+          <li><a href="services.html#joint">Joint Replacement</a></li>
+          <li><a href="services.html#spine">Spine Care</a></li>
+          <li><a href="services.html#pediatric">Pediatric Ortho</a></li>
+          <li><a href="services.html#hand">Hand & Wrist</a></li>
+          <li><a href="services.html#trauma">Trauma Surgery</a></li>
+          <li><a href="services.html#foot-ankle">Foot & Ankle</a></li>
+          <li><a href="services.html#shoulder-elbow">Shoulder & Elbow</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Contact Us</h4>
+        <div class="footer-contact-info">
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin"></i>
+            <p>Aura Surgical Plaza, Suite 400<br>9020 Beverly Hills Blvd, CA 90210</p>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="phone"></i>
+            <p>+1 (800) 555-AURA<br>Mon - Fri: 8:00 AM - 6:00 PM</p>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="mail"></i>
+            <p>concierge@auraclinic.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Aura Orthopedic Clinic. All rights reserved. | <a href="#" style="color:var(--text-muted); text-decoration:none;">Privacy Policy</a> | <a href="#" style="color:var(--text-muted); text-decoration:none;">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <!-- Live Chat Widget -->
+  <div class="chat-widget" id="chat-widget">
+    <div class="chat-bubble" id="chat-bubble" aria-label="Open chat assistant">
+      <i data-lucide="message-square"></i>
+    </div>
+    
+    <div class="glass-card chat-panel layer-fg" id="chat-panel">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-status-dot"></div>
+          <span class="chat-header-title">Aura Concierge Desk</span>
+        </div>
+        <button class="chat-close-btn" id="chat-close" aria-label="Close Chat">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      
+      <div class="chat-messages" id="chat-messages">
+        <div class="chat-msg bot">
+          Welcome to Aura Orthopedics. I am your concierge assistant. How can I help guide your recovery today?
+        </div>
+      </div>
+      
+      <form class="chat-input-area" id="chat-form">
+        <input type="text" class="glass-input" id="chat-input" placeholder="Type a message..." required>
+        <button type="submit" class="chat-send-btn" aria-label="Send Message">
+          <i data-lucide="send"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+
+  <!-- Local Script for Blog Category Filters -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.blog-filter-btn');
+      const blogItems = document.querySelectorAll('.blog-item-wrapper');
+
+      if (filterBtns.length > 0 && blogItems.length > 0) {
+        filterBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const category = btn.getAttribute('data-filter');
+
+            blogItems.forEach(item => {
+              const itemCat = item.getAttribute('data-category');
+              
+              if (category === 'all' || itemCat === category) {
+                item.style.display = 'block';
+                setTimeout(() => {
+                  item.style.opacity = '1';
+                  item.style.transform = 'scale(1)';
+                }, 50);
+              } else {
+                item.style.opacity = '0';
+                item.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                  item.style.display = 'none';
+                }, 300);
+              }
+            });
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
